@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>LightTa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/flat-ui.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+
+  <!--begin 一级菜单-->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	          </button>
+	          <a class="navbar-brand" href="/">聚光塔</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="/">首页 </a></li>
+	            <li><a href="/html/project/list/1/1.html">项目</a></li>
+	            <li><a href="/html/partner/list/1.html">人才</a></li>
+	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
+	            <li class="active"><a href="/html/cyxt/rcfl/list/1.html">人才福利</a></li>
+	            <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
+	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
+	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
+	              </ul>
+	            </li>
+	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
+	            <li><a href="/about.html" target="_blank">关于我们</a></li>       
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right" id="welcome">
+	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
+	            <li><a href="#" onclick="showLogin()">登录</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+  <!--end 一级菜单-->
+  <div class="container">
+    <div style="height:60px;"></div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="我想要知道..." id="keyWord">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="search()">搜索</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+    </div>
+    <div style="height:30px;"></div>
+    <!--begin list-->
+    <div id="list">
+     	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/f19d9d55-be6e-4e93-960c-a28022121d7e.html' target="_blank">【团队建设】创始人应该关心一下团队成员是否快乐</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/f19d9d55-be6e-4e93-960c-a28022121d7e.html' target="_blank">
+	            <img src="/img/article/1416632819924.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：        越快乐的人越能成功，越有创造力，越有活力，越有弹性。他们可以更好地聚在一起工作，可以吸收更多的信息。他们在自己的工具箱里会有更多的工具来帮助他们解决生活中出现的各种问题。他们更健康，活的时间更长，在工作中露面的次数更频繁。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/166d0429-498d-425b-b90c-165fb88a3621.html' target="_blank">【推广运营】跟着她学，应用百万下载量不是问题</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/166d0429-498d-425b-b90c-165fb88a3621.html' target="_blank">
+	            <img src="/img/article/1416123324220.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：你或许不知道 Tamara Steffens 是谁，但是你肯定下载过她推广的应用程序。Steffens 曾在 Path、Color 等公司负责过商业开发部门，最近又加盟了爆红的邮箱应用公司 Acompli。她为 Acompli 带去了数百万的移动应用程序下载量，并帮助 Acompli 与 Verizon、Sprint 等运营商签订了预装协议，将会有更多人打开手机就能用上 Acompli 应用。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/f2517aa0-0282-4a96-80ad-b0d1c7a114b0.html' target="_blank">【市场观察】腾讯下一程：连接一切</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/f2517aa0-0282-4a96-80ad-b0d1c7a114b0.html' target="_blank">
+	            <img src="/img/article/1416113794849.jpeg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：史蒂芬说：“今天我们用QQ、微信聊天，将来我们还可以用QQ、微信做饭、洗衣服、开车、看医生……”腾讯如是描述着自己的新计划。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/2ef60fc2-be9a-41f7-b9f5-2fc8a59d4261.html' target="_blank">【市场观察】一口气发布七个产品，Quirky 想让智能家居成为主流</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/2ef60fc2-be9a-41f7-b9f5-2fc8a59d4261.html' target="_blank">
+	            <img src="/img/article/1416034512090.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要： 创意众包网站 Quirky 去年达成了与通用电气公司（GE）的合作，如今，双方合作出的新的家庭联网设备推出一系列新的智能家居产品，在智能家居尚未流行的美国，他们希望这些产品可以作为主流消费产品被接受。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/f2a0e8e2-0782-41ba-8fb3-bee6a76a1e01.html' target="_blank">【市场观察】Pinterest: 下一代社交巨头</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/f2a0e8e2-0782-41ba-8fb3-bee6a76a1e01.html' target="_blank">
+	            <img src="/img/article/1416033401649.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：       在 Pinterest 网站上，人们可以把图片分类收藏，放在不同的钉板上。CEO 本·西尔伯曼认为「发现」的时代正在到来，未来兴趣图谱也会比社交图谱更强大。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/f7a6c84e-a185-4bdb-a44e-d5f905093e44.html' target="_blank">【交互设计】下一个革命性的人机交互方式会是什么</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/f7a6c84e-a185-4bdb-a44e-d5f905093e44.html' target="_blank">
+	            <img src="/img/article/1415951947541.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：      当新的触摸屏席卷全球改变大爷大妈上网的操作方式，当谷歌眼镜划代而出并越来越受到人们的重视，你是否考虑过下一个改变人们生活的革命式交互方式应该是什么？让我们跟着知乎牛人的回答，看技术的限制下最可能发生的全新人机交互方式。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/e1e2972b-cc36-4167-87a0-c954869efaae.html' target="_blank">【创业经验】创业 CEO：这几种做法会摧毁你的早期成功</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/e1e2972b-cc36-4167-87a0-c954869efaae.html' target="_blank">
+	            <img src="/img/article/1415855195475.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：好不容易找到 Scalable Business Model 的新创企业，有 60-70% 最终无法成功的规模化，成为一家拥有成本、效率、网路效应、通路、技术，或是品牌优势的大企业。
+造成这样悲剧的原因有很多，其中很常见的一个，是创业 CEO 本身的心态与抉择，以下分享几个最常见的。
+</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/a089f143-4dc6-4e5c-9a2d-0c37fb8a053f.html' target="_blank">【创始人须知】常被创始人忽略却至关重要的公司10大发展指标</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/a089f143-4dc6-4e5c-9a2d-0c37fb8a053f.html' target="_blank">
+	            <img src="/img/article/1415854305134.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：投资回报率、客户流失、利润的增长这些都在建立公司过程中需要考虑的。但要建立一个利润非常可观的公司，有更多数据需去了解和掌握。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/f39d7fd1-cfc5-44dc-b81b-935c0a8d3d9f.html' target="_blank">【找技术合伙人】初创企业该如何寻找技术合伙人？</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/f39d7fd1-cfc5-44dc-b81b-935c0a8d3d9f.html' target="_blank">
+	            <img src="/img/article/1415852840068.jpeg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：找一位适合自己的技术联合创始人并不是什么容易的事情。我想将我的经验分享给所有人，让你们可以缩短自己获得成功所需要的时间。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/21bba034-bcb9-4c83-9f93-430accb4e8e2.html' target="_blank">【创业经验】创业初期请避开这10种错误！</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/21bba034-bcb9-4c83-9f93-430accb4e8e2.html' target="_blank">
+	            <img src="/img/article/1415852352248.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：很多创业者有绝妙的创意，但仍会面临很多复杂的问题，例如如何管理企业，如何处理财务问题以及如何雇用员工等。这里有10种你要避免的错误。</p>
+	      </div>
+	    </div>
+    </div>
+    <!--end list-->
+    <!--begin 翻页-->
+    <div style="width:100%;text-align:center;">
+      <div class="pagination pagination-danger">
+
+        <a href="/html/cyxt/cyxt/list/2.html" class="btn btn-danger previous" id="prePage">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+       <a href="#" onclick="turnPage('pre')" class="btn btn-danger previous" id="searchPrePage" style="display:none">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+        <ul>
+          <li><a id="total">共183条</a ><a id="totalPage">共19页</a ><a id="pageIndex">第3页</a ></li>
+        </ul>
+
+        <a href="/html/cyxt/cyxt/list/4.html" class="btn btn-danger next" id="nextPage">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+        <a href="#" onclick="turnPage('next')" class="btn btn-danger next" id="searchNextPage" style="display:none">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+
+      </div>
+    </div>
+    <!--begin 翻页-->
+    
+    <div class="well well-lg">
+    <p>在关注创业信息？想找人才，找创业项目，交流创业经验？想获悉更多最新的线下交流活动？聚光塔创业社交应用，帮助创业者克服创业过程中的困难~</p>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaAndroidApp()">
+            下载android客户端
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaIphoneApp()">
+            下载iOS客户端
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- begin 登录层 -->
+      <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
+		      </div>
+		      <div class="modal-body">
+		          <form class="form-signin" role="form" action="/user!login.action" method="post">
+			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
+			        <br>
+			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
+			         <br>
+			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" onClick="forgetPassword()">忘记密码</button>
+		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+      <!-- end 登录层 -->
+      <footer class="footer">
+	    <div class="container">
+	      <p class="text-muted">广州联维物联网科技有限公司 版权所有 |<a href="/about.html">关于我们</a></p>
+	      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+	    </div>
+	  </footer>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://cdn.zenkr.com/bootstrap/3/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/flat-ui.min.js"></script>
+    <script src="/js/application.js"></script>
+    
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/lighttaCommon.js"></script>
+  </body>
+</html>
+
+<script>
+    $(function(){ 
+	    //回车事件
+	    document.onkeydown = function(e){ 
+	        var ev = document.all ? window.event : e;
+	        if(ev.keyCode==13) {
+	        	search();
+	         }
+	    }
+	});
+
+    //获取数据
+	var pageIndex = 1;//第几页
+	function getData(pageIndex){
+		var keyWord = $("#keyWord").val()
+	    $.ajax({
+	        type: "post", 
+	        url: "/article!getArticlesList.action",
+	        data: {pageCount:10,pageIndex:pageIndex,keyWord:keyWord},
+	        dataType: "json",
+	        success: function(data){
+	       	         var list = data.list;
+	       	         var total = data.total;
+	       	         var totalPage = data.totalPage;
+	       	         pageIndex = data.pageIndex;
+	       	         $("#total").text("共"+total+"条");
+	       	         $("#totalPage").text("共"+totalPage+"页");
+	       	         $("#pageIndex").text("第"+pageIndex+"页");
+	       	         $("#searchPrePage").show();
+	                 $("#searchNextPage").show();
+	                 $("#prePage").hide();
+	                 $("#nextPage").hide();                   
+	       	         if(pageIndex==1){//如果是第一页，则上一页不能点
+	       	        	$("#searchPrePage").hide();
+	       	         }else{
+	       	        	$("#searchPrePage").show();
+	       	         }
+	       	         if(pageIndex==totalPage){//如果是最后，则下一页不能点
+	     	        	$("#searchNextPage").hide();
+	     	         }else{
+	     	        	$("#searchNextPage").show();
+	     	         }
+	          	     $('#list').empty();
+	                 $.each(list,function(idx,item){     
+	                   	   var str =  "<div class='row pjt-list'>"+
+										  "<div class='col-xs-9 col-xs-offset-3'>"+
+											"<h4><a  href='"+item.url+"' target='_blank'>"+item.title+"</a>"+
+											"</h4>"+
+										  "</div>"+
+										  "<div class='col-xs-3'>"+
+											"<a  href='"+item.url+"' target='_blank'>"+
+												"<img src='"+item.cover+"' class='img-rounded' style='width:80%;'>"+
+											"</a>"+
+										  "</div>"+
+										  "<div class='col-xs-9'>"+
+											"<p>摘要："+item.summary+"</p>"+
+										  "</div>"+
+										"</div>";
+	                   	   $("#list").append(str); 
+	                   	})                      
+	         }
+	    });
+	}
+	//翻页
+	function turnPage(turning){
+		if(turning=="next"){
+			pageIndex = pageIndex + 1;
+			getData(pageIndex);
+		}
+		if(turning=="pre"){
+			pageIndex = pageIndex - 1;
+			getData(pageIndex);
+		}
+		
+	}
+	//搜索
+	function search(){
+		getData(pageIndex);
+	}
+    </script>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>LightTa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/flat-ui.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+
+  <!--begin 一级菜单-->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	          </button>
+	          <a class="navbar-brand" href="/">聚光塔</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="/">首页 </a></li>
+	            <li><a href="/html/project/list/1/1.html">项目</a></li>
+	            <li><a href="/html/partner/list/1.html">人才</a></li>
+	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
+	            <li class="active"><a href="/html/cyxt/rcfl/list/1.html">人才福利</a></li>
+	            <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
+	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
+	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
+	              </ul>
+	            </li>
+	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
+	            <li><a href="/about.html" target="_blank">关于我们</a></li>       
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right" id="welcome">
+	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
+	            <li><a href="#" onclick="showLogin()">登录</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+  <!--end 一级菜单-->
+  <div class="container">
+    <div style="height:60px;"></div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="我想要知道..." id="keyWord">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="search()">搜索</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+    </div>
+    <div style="height:30px;"></div>
+    <!--begin list-->
+    <div id="list">
+     	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/xxhd/content/cd7383b0-f755-43fa-9388-9298133d5d09.html' target="_blank">#广州-3月7号-百步梯创业论坛# 【TRIZ创新工具】Triz给您总结和揭示了创造发明的内在规律和原理</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/xxhd/content/cd7383b0-f755-43fa-9388-9298133d5d09.html' target="_blank">
+	            <img src="/img/article/1424944626298.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：Triz源于前苏联，流行于欧美。Triz总结和揭示了创造发明的内在规律和原理，着力于准确定位和解决系统中存在的矛盾，获得最终的理想解。运用TRIZ理论，可大大加快人们创造发明的进程而且能得到高质量的创新产品。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/xxhd/content/7f8210be-c50a-4953-af08-b73ae86481ad.html' target="_blank">2015中国IT好项目,3.15来广州创新谷啦！IT好项目“齐齐看过来！”</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/xxhd/content/7f8210be-c50a-4953-af08-b73ae86481ad.html' target="_blank">
+	            <img src="/img/article/1424048781528.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：聚集IT创新人才，发现未来产业机会，推动IT产业可持续发展——“2015中国IT好项目”3.15来广州创新谷，IT好项目都来这里“进行勾兑”</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/xxhd/content/e7bdfe7f-ce9c-4c1a-98f6-46fbb19485ec.html' target="_blank">#深圳-创客猛犸#【活动预告】本期特邀乐凯撒创始人陈宁</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/xxhd/content/e7bdfe7f-ce9c-4c1a-98f6-46fbb19485ec.html' target="_blank">
+	            <img src="/img/article/1422461580727.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：由南方都市报、北邮深圳研究院、3W孵化器、华友天使汇、科技寺、中兴智汇孵化基金、创新谷联合发起，共同构建有温度的都市消费创投平台—创客猛犸的线下活动“猛犸创业家”第二期将于后天（1月30日周五）举行。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/xxhd/content/7f43a01f-a1d5-418a-8d99-a11ff56d9031.html' target="_blank">#佛山-创客街# 【1月31日惊天秘密】95后天才少年如何赚千万投资？看广佛论剑！</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/xxhd/content/7f43a01f-a1d5-418a-8d99-a11ff56d9031.html' target="_blank">
+	            <img src="/img/article/1422346529338.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：还在为错过白云山论剑而遗憾，
+还在为移动互联网CEO对话而留恋，
+今天，90后创业精英走进佛山，
+巅峰对决，广佛论剑，
+错过一次，不愿再错过！</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/xxhd/content/ebb38d50-3e25-4e72-930a-752a7f00b911.html' target="_blank">#广州创业沙龙# 【1月28日健康食材品鉴会】财智众筹午餐会暨健康食材品鉴会</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/xxhd/content/ebb38d50-3e25-4e72-930a-752a7f00b911.html' target="_blank">
+	            <img src="/img/article/1422333599415.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：1月28日健康食材品鉴会（周三）10:00-16:00财智众筹午餐会暨健康食材品鉴会。WBN财智众筹午餐会是一个国际性的资源对接组织，在全球有500多个分会，采用午餐交流的方式进行资源整合和对接，用筹资、筹智、筹力的方式，帮助商业人士寻找资源。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/xxhd/content/2ede3522-d2d9-45c3-89bb-7214315ce9f8.html' target="_blank">#中大创新谷# 【SME-Talk技术沙龙】短视频—至IN的营销利器</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/xxhd/content/2ede3522-d2d9-45c3-89bb-7214315ce9f8.html' target="_blank">
+	            <img src="/img/article/1421851523863.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：嘉宾介绍
+黄大祥：粉我吧CTO(首席技术官)，具有丰富的互联网实战经验，对分布式服务及跨平台应用有较深理解，精通视频范畴的制作原理和技术功能实现。
+曾仕平：粉我吧CEO（首席执行官），从事广告营销行业，熟悉商业市场及商家需求，有多年的运营推广经验，对现时比较流行的短视频营销有专业见解。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/xxhd/content/d6c160bf-9d70-4c00-862c-11bcfed1d733.html' target="_blank">#深圳云筹沙龙#【1月23在深圳】创业禀赋——“识人”之创业天赋</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/xxhd/content/d6c160bf-9d70-4c00-862c-11bcfed1d733.html' target="_blank">
+	            <img src="/img/article/1421835773735.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：新一期的云筹投资沙龙又要与大家见面了，这一期，我们邀请到肖友良先生为我们带来主题分享“创业禀赋”。禀赋，是指人所具备的天赋，而创业禀赋，则是指导如何识人之创业天赋。在这方面，曾任东方盛富创始合伙人，道富资本总经理，现任中创富总经理的肖先生，可是有着多年的经验的。本周五下午3:00，云筹投资沙龙IV期，与你不见不散！</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/xxhd/content/832aefe7-e490-483d-89de-534f695ff1bf.html' target="_blank">#百步梯创业论坛#【1月25号晚餐交流会】：创业投资那点事</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/xxhd/content/832aefe7-e490-483d-89de-534f695ff1bf.html' target="_blank">
+	            <img src="/img/article/1421815838093.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：嘉宾：朱文平校友，华工大1984-1991年自动化本硕连读，湾海投资CEO/联合创始人，广东天使会副秘书长。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/xxhd/content/6c348183-e773-463c-8fc5-8499d27d88f2.html' target="_blank">#百步梯创业论坛#【1月24日晚餐交流会】：TMT行业产品运营、创业、投资经验交流</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/xxhd/content/6c348183-e773-463c-8fc5-8499d27d88f2.html' target="_blank">
+	            <img src="/img/article/1421815488056.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：百步梯创业论坛：1月24日晚餐交流会
+
+主题：O2O，社交，电商，互联网金融等TMT行业产品运营、创业、投资经验交流</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/xxhd/content/b0a3b79f-cb26-4bc5-9487-28623a590966.html' target="_blank">#创客街 #【投融资对接会】：2015年广州首场特大型创业投融资对接大会</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/xxhd/content/b0a3b79f-cb26-4bc5-9487-28623a590966.html' target="_blank">
+	            <img src="/img/article/1421815025135.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：创业投资对接大会预告
+1月25日（周日下午），2015年广州首场特大型创业投资对接大会·项目路演专场活动盛大开幕，大咖云集，风云际会！最前沿的主题演讲，最优质的项目路演，最好的创业转型案例，最庞大的投资人阵容。人脉大爆炸的聚会，思想碰撞，这里，是创业者的舞台，2015年度首场开年大典，就在本周日创客街！</p>
+	      </div>
+	    </div>
+    </div>
+    <!--end list-->
+    <!--begin 翻页-->
+    <div style="width:100%;text-align:center;">
+      <div class="pagination pagination-danger">
+
+        <a href="#" class="btn btn-danger previous" id="prePage">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+       <a href="#" onclick="turnPage('pre')" class="btn btn-danger previous" id="searchPrePage" style="display:none">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+        <ul>
+          <li><a id="total">共11条</a ><a id="totalPage">共2页</a ><a id="pageIndex">第1页</a ></li>
+        </ul>
+
+        <a href="/html/cyxt/xxhd/list/2.html" class="btn btn-danger next" id="nextPage">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+        <a href="#" onclick="turnPage('next')" class="btn btn-danger next" id="searchNextPage" style="display:none">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+
+      </div>
+    </div>
+    <!--begin 翻页-->
+    
+    <div class="well well-lg">
+    <p>在关注创业信息？想找人才，找创业项目，交流创业经验？想获悉更多最新的线下交流活动？聚光塔创业社交应用，帮助创业者克服创业过程中的困难~</p>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaAndroidApp()">
+            下载android客户端
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaIphoneApp()">
+            下载iOS客户端
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- begin 登录层 -->
+      <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
+		      </div>
+		      <div class="modal-body">
+		          <form class="form-signin" role="form" action="/user!login.action" method="post">
+			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
+			        <br>
+			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
+			         <br>
+			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" onClick="forgetPassword()">忘记密码</button>
+		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+      <!-- end 登录层 -->
+      <footer class="footer">
+	    <div class="container">
+	      <p class="text-muted">广州联维物联网科技有限公司 版权所有 |<a href="/about.html">关于我们</a></p>
+	      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+	    </div>
+	  </footer>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://cdn.zenkr.com/bootstrap/3/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/flat-ui.min.js"></script>
+    <script src="/js/application.js"></script>
+    
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/lighttaCommon.js"></script>
+  </body>
+</html>
+
+<script>
+    $(function(){ 
+	    //回车事件
+	    document.onkeydown = function(e){ 
+	        var ev = document.all ? window.event : e;
+	        if(ev.keyCode==13) {
+	        	search();
+	         }
+	    }
+	});
+
+    //获取数据
+	var pageIndex = 1;//第几页
+	function getData(pageIndex){
+		var keyWord = $("#keyWord").val()
+	    $.ajax({
+	        type: "post", 
+	        url: "/article!getArticlesList.action",
+	        data: {pageCount:10,pageIndex:pageIndex,keyWord:keyWord},
+	        dataType: "json",
+	        success: function(data){
+	       	         var list = data.list;
+	       	         var total = data.total;
+	       	         var totalPage = data.totalPage;
+	       	         pageIndex = data.pageIndex;
+	       	         $("#total").text("共"+total+"条");
+	       	         $("#totalPage").text("共"+totalPage+"页");
+	       	         $("#pageIndex").text("第"+pageIndex+"页");
+	       	         $("#searchPrePage").show();
+	                 $("#searchNextPage").show();
+	                 $("#prePage").hide();
+	                 $("#nextPage").hide();                   
+	       	         if(pageIndex==1){//如果是第一页，则上一页不能点
+	       	        	$("#searchPrePage").hide();
+	       	         }else{
+	       	        	$("#searchPrePage").show();
+	       	         }
+	       	         if(pageIndex==totalPage){//如果是最后，则下一页不能点
+	     	        	$("#searchNextPage").hide();
+	     	         }else{
+	     	        	$("#searchNextPage").show();
+	     	         }
+	          	     $('#list').empty();
+	                 $.each(list,function(idx,item){     
+	                   	   var str =  "<div class='row pjt-list'>"+
+										  "<div class='col-xs-9 col-xs-offset-3'>"+
+											"<h4><a  href='"+item.url+"' target='_blank'>"+item.title+"</a>"+
+											"</h4>"+
+										  "</div>"+
+										  "<div class='col-xs-3'>"+
+											"<a  href='"+item.url+"' target='_blank'>"+
+												"<img src='"+item.cover+"' class='img-rounded' style='width:80%;'>"+
+											"</a>"+
+										  "</div>"+
+										  "<div class='col-xs-9'>"+
+											"<p>摘要："+item.summary+"</p>"+
+										  "</div>"+
+										"</div>";
+	                   	   $("#list").append(str); 
+	                   	})                      
+	         }
+	    });
+	}
+	//翻页
+	function turnPage(turning){
+		if(turning=="next"){
+			pageIndex = pageIndex + 1;
+			getData(pageIndex);
+		}
+		if(turning=="pre"){
+			pageIndex = pageIndex - 1;
+			getData(pageIndex);
+		}
+		
+	}
+	//搜索
+	function search(){
+		getData(pageIndex);
+	}
+    </script>

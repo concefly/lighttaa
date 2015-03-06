@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>LightTa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/flat-ui.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+
+  <!--begin 一级菜单-->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	          </button>
+	          <a class="navbar-brand" href="/">聚光塔</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="/">首页 </a></li>
+	            <li><a href="/html/project/list/1/1.html">项目</a></li>
+	            <li><a href="/html/partner/list/1.html">人才</a></li>
+	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
+	            <li class="active"><a href="/html/cyxt/rcfl/list/1.html">人才福利</a></li>
+	            <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
+	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
+	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
+	              </ul>
+	            </li>
+	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
+	            <li><a href="/about.html" target="_blank">关于我们</a></li>       
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right" id="welcome">
+	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
+	            <li><a href="#" onclick="showLogin()">登录</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+  <!--end 一级菜单-->
+  <div class="container">
+    <div style="height:60px;"></div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="我想要知道..." id="keyWord">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="search()">搜索</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+    </div>
+    <div style="height:30px;"></div>
+    <!--begin list-->
+    <div id="list">
+     	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/a40aa5f2-5c3c-4ae0-bfff-3b0ff5225706.html' target="_blank">广东省粤科大学生创新创业基金开放申请通告</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/a40aa5f2-5c3c-4ae0-bfff-3b0ff5225706.html' target="_blank">
+	            <img src="/img/article/1415277393506.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：   为贯彻落实《广东省人民政府办公厅关于促进科技和金融结合的实施意见》精神及中央、省委对促进大学生创新创业的有关要求，激励青年学生成长成为创新创业的生力军，共青团广东省委员会和广东省粤科金融集团共同发起设立广东粤科大学生创新创业基金。通过整合社会资源、发挥市场机制，进一步培育和孵化优秀的大学生创新创业项目。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/d4e36912-4c34-4ed6-9908-01cb12756d29.html' target="_blank">总理发出“草根创业”邀请函：你准备好了吗？</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/d4e36912-4c34-4ed6-9908-01cb12756d29.html' target="_blank">
+	            <img src="/img/article/1415277556210.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：2014夏季达沃斯论坛的开幕式上，国务院总理李克强称，要破除一切束缚发展的体制机制障碍，让每个有创业愿望的人都有自主创业的空间。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/ca0e2976-9fe1-404d-aa1b-497482b48043.html' target="_blank">【广东创业政策】关于做好2014年高校毕业生优秀创业项目资助申报评审工作的通知</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/ca0e2976-9fe1-404d-aa1b-497482b48043.html' target="_blank">
+	            <img src="/img/article/1415278034245.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：        根据《关于印发〈广东省人力资源和社会保障厅关于高校毕业生优秀创业项目资助的申报评审办法〉的通知》（粤人社规〔2013〕5号）规定，今年我省继续遴选资助一批高校毕业生创业项目。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/d433ca5f-eda1-48bd-9108-7122779d04f2.html' target="_blank">【广东省科学技术厅、广东省财政厅】关于组织申报2014年度省级前沿与关键技术创新专项资金科技型中小企业技术创新项目的通知 </a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/d433ca5f-eda1-48bd-9108-7122779d04f2.html' target="_blank">
+	            <img src="/img/article/1415278673617.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：      为了贯彻党的十八届三中全会和省委十一届三次会议精神，落实《中共广东省委 广东省人民政府关于全面深化科技体制改革加快创新驱动发展的决定》（粤发〔2014〕12号），充分发挥科技型中小企业创新基金引导作用，切实增强我省科技型中小微企业自主创新能力，推动高端科技人才创业和战略性新兴产业发展，省科技厅、省财政厅决定联合组织申报2014年度省级前沿与关键技术创新专项资金科技型中小企业技术创新项目，现将有关申报事项通知如下：
+</p>
+	      </div>
+	    </div>
+    </div>
+    <!--end list-->
+    <!--begin 翻页-->
+    <div style="width:100%;text-align:center;">
+      <div class="pagination pagination-danger">
+
+        <a href="/html/cyxt/zxzc/list/1.html" class="btn btn-danger previous" id="prePage">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+       <a href="#" onclick="turnPage('pre')" class="btn btn-danger previous" id="searchPrePage" style="display:none">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+        <ul>
+          <li><a id="total">共14条</a ><a id="totalPage">共2页</a ><a id="pageIndex">第2页</a ></li>
+        </ul>
+
+        <a href="#" class="btn btn-danger next" id="nextPage">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+        <a href="#" onclick="turnPage('next')" class="btn btn-danger next" id="searchNextPage" style="display:none">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+
+      </div>
+    </div>
+    <!--begin 翻页-->
+    
+    <div class="well well-lg">
+    <p>在关注创业信息？想找人才，找创业项目，交流创业经验？想获悉更多最新的线下交流活动？聚光塔创业社交应用，帮助创业者克服创业过程中的困难~</p>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaAndroidApp()">
+            下载android客户端
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaIphoneApp()">
+            下载iOS客户端
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- begin 登录层 -->
+      <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
+		      </div>
+		      <div class="modal-body">
+		          <form class="form-signin" role="form" action="/user!login.action" method="post">
+			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
+			        <br>
+			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
+			         <br>
+			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" onClick="forgetPassword()">忘记密码</button>
+		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+      <!-- end 登录层 -->
+      <footer class="footer">
+	    <div class="container">
+	      <p class="text-muted">广州联维物联网科技有限公司 版权所有 |<a href="/about.html">关于我们</a></p>
+	      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+	    </div>
+	  </footer>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://cdn.zenkr.com/bootstrap/3/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/flat-ui.min.js"></script>
+    <script src="/js/application.js"></script>
+    
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/lighttaCommon.js"></script>
+  </body>
+</html>
+
+<script>
+    $(function(){ 
+	    //回车事件
+	    document.onkeydown = function(e){ 
+	        var ev = document.all ? window.event : e;
+	        if(ev.keyCode==13) {
+	        	search();
+	         }
+	    }
+	});
+
+    //获取数据
+	var pageIndex = 1;//第几页
+	function getData(pageIndex){
+		var keyWord = $("#keyWord").val()
+	    $.ajax({
+	        type: "post", 
+	        url: "/article!getArticlesList.action",
+	        data: {pageCount:10,pageIndex:pageIndex,keyWord:keyWord},
+	        dataType: "json",
+	        success: function(data){
+	       	         var list = data.list;
+	       	         var total = data.total;
+	       	         var totalPage = data.totalPage;
+	       	         pageIndex = data.pageIndex;
+	       	         $("#total").text("共"+total+"条");
+	       	         $("#totalPage").text("共"+totalPage+"页");
+	       	         $("#pageIndex").text("第"+pageIndex+"页");
+	       	         $("#searchPrePage").show();
+	                 $("#searchNextPage").show();
+	                 $("#prePage").hide();
+	                 $("#nextPage").hide();                   
+	       	         if(pageIndex==1){//如果是第一页，则上一页不能点
+	       	        	$("#searchPrePage").hide();
+	       	         }else{
+	       	        	$("#searchPrePage").show();
+	       	         }
+	       	         if(pageIndex==totalPage){//如果是最后，则下一页不能点
+	     	        	$("#searchNextPage").hide();
+	     	         }else{
+	     	        	$("#searchNextPage").show();
+	     	         }
+	          	     $('#list').empty();
+	                 $.each(list,function(idx,item){     
+	                   	   var str =  "<div class='row pjt-list'>"+
+										  "<div class='col-xs-9 col-xs-offset-3'>"+
+											"<h4><a  href='"+item.url+"' target='_blank'>"+item.title+"</a>"+
+											"</h4>"+
+										  "</div>"+
+										  "<div class='col-xs-3'>"+
+											"<a  href='"+item.url+"' target='_blank'>"+
+												"<img src='"+item.cover+"' class='img-rounded' style='width:80%;'>"+
+											"</a>"+
+										  "</div>"+
+										  "<div class='col-xs-9'>"+
+											"<p>摘要："+item.summary+"</p>"+
+										  "</div>"+
+										"</div>";
+	                   	   $("#list").append(str); 
+	                   	})                      
+	         }
+	    });
+	}
+	//翻页
+	function turnPage(turning){
+		if(turning=="next"){
+			pageIndex = pageIndex + 1;
+			getData(pageIndex);
+		}
+		if(turning=="pre"){
+			pageIndex = pageIndex - 1;
+			getData(pageIndex);
+		}
+		
+	}
+	//搜索
+	function search(){
+		getData(pageIndex);
+	}
+    </script>

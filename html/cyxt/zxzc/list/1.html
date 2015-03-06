@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>LightTa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/flat-ui.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+
+  <!--begin 一级菜单-->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	          </button>
+	          <a class="navbar-brand" href="/">聚光塔</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="/">首页 </a></li>
+	            <li><a href="/html/project/list/1/1.html">项目</a></li>
+	            <li><a href="/html/partner/list/1.html">人才</a></li>
+	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
+	            <li class="active"><a href="/html/cyxt/rcfl/list/1.html">人才福利</a></li>
+	            <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
+	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
+	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
+	              </ul>
+	            </li>
+	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
+	            <li><a href="/about.html" target="_blank">关于我们</a></li>       
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right" id="welcome">
+	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
+	            <li><a href="#" onclick="showLogin()">登录</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+  <!--end 一级菜单-->
+  <div class="container">
+    <div style="height:60px;"></div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="我想要知道..." id="keyWord">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="search()">搜索</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+    </div>
+    <div style="height:30px;"></div>
+    <!--begin list-->
+    <div id="list">
+     	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/5c0a0538-aeeb-434e-97bc-f6cd7b3ffcc2.html' target="_blank">【创业福利】微官网免费送啦，仅限“聚光塔”的用户哦！</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/5c0a0538-aeeb-434e-97bc-f6cd7b3ffcc2.html' target="_blank">
+	            <img src="/img/article/1425392574985.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：您是聚光塔的用户吗？
+如果您是，恭喜您——聚光塔为回报2014一年来广大用户的支持，给广大聚光塔用户送福利啦~
+</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/18409e83-2d93-470c-b77a-cbb4849b5cee.html' target="_blank">鼓励创业 教育部出台休学创业后配套政策</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/18409e83-2d93-470c-b77a-cbb4849b5cee.html' target="_blank">
+	            <img src="/img/article/1425392860185.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：根据教育部2005年颁布的《普通高等学校学生管理规定》要求，学生申请休学由学校批准，休学期限由学校规定，休学学生应当办理休学手续离校，学校保留学籍。
+教育部同时回复称：为鼓励和支持大学生创新创业，有关部门和地方还出台了提供创业培训指导服务，给予创业培训补贴，减免行政事业性收费，提供资金支持和创业经营场所支持等一系列优惠政策。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/af294955-9112-4f64-b1c5-e238117363b7.html' target="_blank">你有项目，我来帮你推荐投资人</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/af294955-9112-4f64-b1c5-e238117363b7.html' target="_blank">
+	            <img src="/img/article/1420863600879.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：聚光塔聚集了一批投资人，我们每天帮忙推荐一到两个项目给他们。有需要的创业者可以联系我们。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/67f65ff7-86d0-4b14-8c8a-e5b5c3f7247b.html' target="_blank">“聚光塔”中的创业投资公司的名单</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/67f65ff7-86d0-4b14-8c8a-e5b5c3f7247b.html' target="_blank">
+	            <img src="/img/article/1422535020546.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：聚光塔上线两个月已经有很多投资基金及其投资经理进驻聚光塔这个APP，现在做个整理向广大创业者回报一下名单。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/15268a80-e64b-47d3-96aa-95effa965535.html' target="_blank">【周年庆活动】开放聚光塔公众号平台，回报各位创业者及天使</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/15268a80-e64b-47d3-96aa-95effa965535.html' target="_blank">
+	            <img src="/img/article/1419508356972.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：     今天是圣诞节，明天是我们公司联维科技成立一周年纪念日！
+    为感谢大家，这一年来对我们团队成长的支持与关注，同时服务更多创业者，我们决定把聚光塔创业孵化APP开放给各位有志于服务创业者的个人与机构。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/26ca8662-2bd8-44ea-85d5-98be00d671a3.html' target="_blank">【华南理工大学】关于推荐大学生创业项目在广州股权交易中心 “青创板”挂牌的通知</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/26ca8662-2bd8-44ea-85d5-98be00d671a3.html' target="_blank">
+	            <img src="/img/article/1419402925201.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：为响应习主席和党中央、团中央的号召，进一步发挥我校学生创新创业活动在提升人才培养质量上的成效和对学校教学、科研工作的促进作用，努力将学校的科研优势更有效地转化为人才培养优势，基于全社会重视和支持青年尤其是大学生创新创业的背景，以及华南理工大学在创新创业领域所开展的丰富实践，真正把帮扶学生创业落到实处，近年来学校采取多种措施鼓励和支持学生创新创业，为学子搭建了一个能够充分展现才能的平台。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/8c903581-b229-4097-af5b-0d7f3b1b4c85.html' target="_blank">【寻找合作】搭建“聚光塔”O2O孵化器，寻找合作伙伴</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/8c903581-b229-4097-af5b-0d7f3b1b4c85.html' target="_blank">
+	            <img src="/img/article/1419056844339.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：聚光塔-创业孵化APP，面向全国寻找合作伙伴！欢迎有志于扶持创业者创业的同伴们，加入我们的队伍中来！</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/7fbf2ab8-8d54-438f-923d-d038dc96a4c9.html' target="_blank">【创业政策】教育部发布通知：允许高校在校生休学创业</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/7fbf2ab8-8d54-438f-923d-d038dc96a4c9.html' target="_blank">
+	            <img src="/img/article/1418280206634.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：教育部12月10日就做好2015年高校毕业生就业创业工作下发通知，要求各地各高校全面推进创新创业教育和自主创业工作，加大对大学生自主创业资金支持力度，高校要建立弹性学制，允许在校学生休学创业。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/5d5933d6-09bb-4119-9145-5da08cc061c9.html' target="_blank">【广州创业】第二届广州青年创业大赛启动， 创业基金1亿元+奖金10万元+免租入驻基地等你拿！</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/5d5933d6-09bb-4119-9145-5da08cc061c9.html' target="_blank">
+	            <img src="/img/article/1416215257353.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：第二届广州青年创业大赛启动啦~~~~ 创业基金1亿元+奖金10万元+免租入驻基地等你拿！</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/zxzc/content/6dc7e7ea-f631-4b8a-9d3f-6a5ce5f99720.html' target="_blank">【技术支持】聚光塔给各个创业团队提供技术支持</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/zxzc/content/6dc7e7ea-f631-4b8a-9d3f-6a5ce5f99720.html' target="_blank">
+	            <img src="/img/article/1415764931977.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：      日新月异的今天，不论你的年龄性别，也不论你从事什么职业，当你深入了解市场，接触最底层的用户，深刻的理解他们的需求的时候，你是否也曾想做点什么来满足这个需求——为自己深刻理解的人做点有益的事！
+</p>
+	      </div>
+	    </div>
+    </div>
+    <!--end list-->
+    <!--begin 翻页-->
+    <div style="width:100%;text-align:center;">
+      <div class="pagination pagination-danger">
+
+        <a href="#" class="btn btn-danger previous" id="prePage">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+       <a href="#" onclick="turnPage('pre')" class="btn btn-danger previous" id="searchPrePage" style="display:none">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+        <ul>
+          <li><a id="total">共14条</a ><a id="totalPage">共2页</a ><a id="pageIndex">第1页</a ></li>
+        </ul>
+
+        <a href="/html/cyxt/zxzc/list/2.html" class="btn btn-danger next" id="nextPage">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+        <a href="#" onclick="turnPage('next')" class="btn btn-danger next" id="searchNextPage" style="display:none">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+
+      </div>
+    </div>
+    <!--begin 翻页-->
+    
+    <div class="well well-lg">
+    <p>在关注创业信息？想找人才，找创业项目，交流创业经验？想获悉更多最新的线下交流活动？聚光塔创业社交应用，帮助创业者克服创业过程中的困难~</p>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaAndroidApp()">
+            下载android客户端
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaIphoneApp()">
+            下载iOS客户端
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- begin 登录层 -->
+      <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
+		      </div>
+		      <div class="modal-body">
+		          <form class="form-signin" role="form" action="/user!login.action" method="post">
+			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
+			        <br>
+			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
+			         <br>
+			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" onClick="forgetPassword()">忘记密码</button>
+		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+      <!-- end 登录层 -->
+      <footer class="footer">
+	    <div class="container">
+	      <p class="text-muted">广州联维物联网科技有限公司 版权所有 |<a href="/about.html">关于我们</a></p>
+	      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+	    </div>
+	  </footer>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://cdn.zenkr.com/bootstrap/3/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/flat-ui.min.js"></script>
+    <script src="/js/application.js"></script>
+    
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/lighttaCommon.js"></script>
+  </body>
+</html>
+
+<script>
+    $(function(){ 
+	    //回车事件
+	    document.onkeydown = function(e){ 
+	        var ev = document.all ? window.event : e;
+	        if(ev.keyCode==13) {
+	        	search();
+	         }
+	    }
+	});
+
+    //获取数据
+	var pageIndex = 1;//第几页
+	function getData(pageIndex){
+		var keyWord = $("#keyWord").val()
+	    $.ajax({
+	        type: "post", 
+	        url: "/article!getArticlesList.action",
+	        data: {pageCount:10,pageIndex:pageIndex,keyWord:keyWord},
+	        dataType: "json",
+	        success: function(data){
+	       	         var list = data.list;
+	       	         var total = data.total;
+	       	         var totalPage = data.totalPage;
+	       	         pageIndex = data.pageIndex;
+	       	         $("#total").text("共"+total+"条");
+	       	         $("#totalPage").text("共"+totalPage+"页");
+	       	         $("#pageIndex").text("第"+pageIndex+"页");
+	       	         $("#searchPrePage").show();
+	                 $("#searchNextPage").show();
+	                 $("#prePage").hide();
+	                 $("#nextPage").hide();                   
+	       	         if(pageIndex==1){//如果是第一页，则上一页不能点
+	       	        	$("#searchPrePage").hide();
+	       	         }else{
+	       	        	$("#searchPrePage").show();
+	       	         }
+	       	         if(pageIndex==totalPage){//如果是最后，则下一页不能点
+	     	        	$("#searchNextPage").hide();
+	     	         }else{
+	     	        	$("#searchNextPage").show();
+	     	         }
+	          	     $('#list').empty();
+	                 $.each(list,function(idx,item){     
+	                   	   var str =  "<div class='row pjt-list'>"+
+										  "<div class='col-xs-9 col-xs-offset-3'>"+
+											"<h4><a  href='"+item.url+"' target='_blank'>"+item.title+"</a>"+
+											"</h4>"+
+										  "</div>"+
+										  "<div class='col-xs-3'>"+
+											"<a  href='"+item.url+"' target='_blank'>"+
+												"<img src='"+item.cover+"' class='img-rounded' style='width:80%;'>"+
+											"</a>"+
+										  "</div>"+
+										  "<div class='col-xs-9'>"+
+											"<p>摘要："+item.summary+"</p>"+
+										  "</div>"+
+										"</div>";
+	                   	   $("#list").append(str); 
+	                   	})                      
+	         }
+	    });
+	}
+	//翻页
+	function turnPage(turning){
+		if(turning=="next"){
+			pageIndex = pageIndex + 1;
+			getData(pageIndex);
+		}
+		if(turning=="pre"){
+			pageIndex = pageIndex - 1;
+			getData(pageIndex);
+		}
+		
+	}
+	//搜索
+	function search(){
+		getData(pageIndex);
+	}
+    </script>

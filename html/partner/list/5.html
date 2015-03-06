@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>LightTa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/flat-ui.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+
+  <!--begin 一级菜单-->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	          </button>
+	          <a class="navbar-brand" href="/">聚光塔</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="/">首页 </a></li>
+	            <li><a href="/html/project/list/1/1.html">项目</a></li>
+	            <li class="active"><a href="/html/partner/list/1.html">人才</a></li>
+	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
+	    	    <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
+	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
+	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
+	              </ul>
+	            </li>
+	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
+	            <li><a href="/about.html" target="_blank">关于我们</a></li>       
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right" id="welcome">
+	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
+	            <li><a href="#" onclick="showLogin()">登录</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+  <!--end 一级菜单-->
+  <div class="container">
+    <div style="height:60px;"></div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="我想要知道..." id="keyWord">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="search()">搜索</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+    </div>
+    <div style="height:30px;"></div>
+    <!--begin list-->
+    <div id="list">
+     	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/partner/content/519adbf4-cd55-49fd-a282-3dc1749e94c5.html' target="_blank">Donald Wong</a>
+	            <small>广东金融学院</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/partner/content/519adbf4-cd55-49fd-a282-3dc1749e94c5.html' target="_blank">
+	            <img src="/img/defaultChatHead.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：工业测量自动化</p>
+	        <p>创业经历：Romidot Ltd.</p>
+	        <p>个人技能：市场运营，英文</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/partner/content/54fb05b1-becf-42a5-9263-a946f19dfe5b.html' target="_blank">concefly</a>
+	            <small></small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/partner/content/54fb05b1-becf-42a5-9263-a946f19dfe5b.html' target="_blank">
+	            <img src="/img/defaultChatHead.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：在线教育</p>
+	        <p>创业经历：暂无</p>
+	        <p>个人技能：嵌入式，认知设计</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/partner/content/6d2e2990-7abd-4f8e-9303-65b91d9508a3.html' target="_blank">威震天</a>
+	            <small>华南理工大学</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/partner/content/6d2e2990-7abd-4f8e-9303-65b91d9508a3.html' target="_blank">
+	            <img src="/img/defaultChatHead.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：智能可穿戴，智能家居，安卓开发，IOS开发</p>
+	        <p>创业经历：很多很多，就不告诉你！！！！你打我呀！！！</p>
+	        <p>个人技能：</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/partner/content/709d7316-45c5-48b5-b5b7-6c7a0d6fe082.html' target="_blank">邓小俊</a>
+	            <small>广州大学</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/partner/content/709d7316-45c5-48b5-b5b7-6c7a0d6fe082.html' target="_blank">
+	            <img src="/img/chatHead/1412614485298.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：</p>
+	        <p>创业经历：</p>
+	        <p>个人技能：</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/partner/content/7983f484-2c74-4ef6-8489-838910379e17.html' target="_blank">陈仁集</a>
+	            <small></small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/partner/content/7983f484-2c74-4ef6-8489-838910379e17.html' target="_blank">
+	            <img src="/img/defaultChatHead.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：移动互联网客户端开发</p>
+	        <p>创业经历：2012年开淘宝经营红酒销售，2013年参加创青春挑战杯创业计划竞赛获得铜奖
+2014年在移动互联网客户端创业</p>
+	        <p>个人技能：带领团队，经营管理网络店铺市场开拓！</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/partner/content/8545654b-dccf-4b9d-8223-faa45c28c16e.html' target="_blank">王有志</a>
+	            <small>华南农业大学</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/partner/content/8545654b-dccf-4b9d-8223-faa45c28c16e.html' target="_blank">
+	            <img src="/img/chatHead/1414667048998.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：移动互联网</p>
+	        <p>创业经历：校园奶茶店、校园鞋店</p>
+	        <p>个人技能：营销推广、产品构思</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/partner/content/acb20314-155d-44aa-a695-af57cb9e0f99.html' target="_blank">真何建林</a>
+	            <small>华工</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/partner/content/acb20314-155d-44aa-a695-af57cb9e0f99.html' target="_blank">
+	            <img src="/img/chatHead/1415886574286.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：移动互联网</p>
+	        <p>创业经历：有</p>
+	        <p>个人技能：android开发</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/partner/content/b1e57a4f-e453-4d7d-b7ad-2a05454ac759.html' target="_blank">陆明</a>
+	            <small>深圳大学</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/partner/content/b1e57a4f-e453-4d7d-b7ad-2a05454ac759.html' target="_blank">
+	            <img src="/img/chatHead/1412414740063.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：移动互联网</p>
+	        <p>创业经历：深圳宝明信息科技有限公司创始人</p>
+	        <p>个人技能：</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/partner/content/b9f6adcc-32aa-4b43-88c1-fcb5dde68acd.html' target="_blank">路飞</a>
+	            <small>华南理工大学</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/partner/content/b9f6adcc-32aa-4b43-88c1-fcb5dde68acd.html' target="_blank">
+	            <img src="/img/defaultChatHead.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：智能家居产品研发，及技术外包</p>
+	        <p>创业经历：2011年成立广州新汇丰软件科技有限公司。主要负责产品规划及市场需求分析。</p>
+	        <p>个人技能：</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/partner/content/fd54b102-d009-44a2-9e80-baa9a06699e6.html' target="_blank">ccllaw</a>
+	            <small>华南理工大学法学院</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/partner/content/fd54b102-d009-44a2-9e80-baa9a06699e6.html' target="_blank">
+	            <img src="/img/chatHead/1412693128972.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：律师，伦孚公司，律付网</p>
+	        <p>创业经历：2014年在北京市盈科（广州）律师事务所合伙人，独立执业带领团队。</p>
+	        <p>个人技能：律师和公司股权设计</p>
+	      </div>
+	    </div>
+    </div>
+    <!--end list-->
+    <!--begin 翻页-->
+    <div style="width:100%;text-align:center;">
+      <div class="pagination pagination-danger">
+
+        <a href="/html/partner/list/4.html" class="btn btn-danger previous" id="prePage">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+       <a href="#" onclick="turnPage('pre')" class="btn btn-danger previous" id="searchPrePage" style="display:none">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+        <ul>
+          <li><a id="total">共50条</a ><a id="totalPage">共5页</a ><a id="pageIndex">第5页</a ></li>
+        </ul>
+
+        <a href="#" class="btn btn-danger next" id="nextPage">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+        <a href="#" onclick="turnPage('next')" class="btn btn-danger next" id="searchNextPage" style="display:none">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <!--begin 翻页-->
+    
+    <div class="well well-lg">
+    <p>在关注创业信息？想找人才，找创业项目，交流创业经验？想获悉更多最新的线下交流活动？聚光塔创业社交应用，帮助创业者克服创业过程中的困难~</p>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaAndroidApp()">
+            下载android客户端
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaIphoneApp()">
+            下载iOS客户端
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- begin 登录层 -->
+      <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
+		      </div>
+		      <div class="modal-body">
+		          <form class="form-signin" role="form" action="/user!login.action" method="post">
+			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
+			        <br>
+			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
+			         <br>
+			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" onClick="forgetPassword()">忘记密码</button>
+		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+      <!-- end 登录层 -->
+      <footer class="footer">
+	    <div class="container">
+	      <p class="text-muted">广州联维物联网科技有限公司 版权所有 |<a href="/about.html">关于我们</a></p>
+	      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+	    </div>
+	  </footer>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://cdn.zenkr.com/bootstrap/3/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/flat-ui.min.js"></script>
+    <script src="/js/application.js"></script>
+    
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/lighttaCommon.js"></script>
+  </body>
+</html>
+
+<script type="text/javascript">
+
+$(function(){ 
+    //回车事件
+    document.onkeydown = function(e){ 
+        var ev = document.all ? window.event : e;
+        if(ev.keyCode==13) {
+        	search();
+         }
+    }
+});
+
+//获取数据
+var pageIndex = 1;//第几页
+function getData(pageIndex){
+	var keyWord = $("#keyWord").val()
+    $.ajax({
+        type: "post", 
+        url: "/partner!getPartnersList.action",
+        data: {pageCount:10,pageIndex:pageIndex,keyWord:keyWord},
+        dataType: "json",
+        success: function(data){
+       	         var list = data.list;
+       	         var total = data.total;
+       	         var totalPage = data.totalPage;
+       	         pageIndex = data.pageIndex;
+       	         $("#total").text("共"+total+"条");
+       	         $("#totalPage").text("共"+totalPage+"页");
+       	         $("#pageIndex").text("第"+pageIndex+"页");
+       	         
+   	             $("#searchPrePage").show();
+                 $("#searchNextPage").show();
+                 $("#prePage").hide();
+                 $("#nextPage").hide();                   
+       	         if(pageIndex==1){//如果是第一页，则上一页不能点
+       	        	$("#searchPrePage").hide();
+       	         }else{
+       	        	$("#searchPrePage").show();
+       	         }
+       	         if(pageIndex==totalPage){//如果是最后，则下一页不能点
+     	        	$("#searchNextPage").hide();
+     	         }else{
+     	        	$("#searchNextPage").show();
+     	         }
+          	     $('#list').empty();
+                 $.each(list,function(idx,item){    
+                   	   var str = "<div class='row pjt-list'>"+
+								  "<div class='col-xs-9 col-xs-offset-3'>"+
+									"<h4><a  href='"+item.url+"' target='_blank'>"+item.name+"</a>"+
+										"<small>"+item.school+"</small>"+
+									"</h4>"+
+								  "</div>"+
+								  "<div class='col-xs-3'>"+
+									"<a  href='"+item.name+"' target='_blank'>"+
+										"<img src='"+item.chatHead+"' class='img-rounded' style='width:80%;'>"+
+									"</a>"+
+								  "</div>"+
+								  "<div class='col-xs-9'>"+
+									"<p>领域："+item.field+"</p>"+
+									"<p>创业经历："+item.experience+"</p>"+
+									"<p>个人技能："+item.personalSkill+"</p>"+
+								  "</div>"+
+								"</div>";
+                   	   $("#list").append(str); 
+                   	})
+         }
+    });
+}
+//翻页
+function turnPage(turning){
+	if(turning=="next"){
+		pageIndex = pageIndex + 1;
+		getData(pageIndex);
+	}
+	if(turning=="pre"){
+		pageIndex = pageIndex - 1;
+		getData(pageIndex);
+	}
+	
+}
+
+//搜索
+function search(){
+	getData(pageIndex);
+}
+</script>
