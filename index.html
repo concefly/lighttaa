@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap-theme.min.css" rel="stylesheet"> -->
     <link href="./css/flat-ui.min.css" rel="stylesheet">
     <link href="./css/custom.css" rel="stylesheet">
 
@@ -26,185 +27,240 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="./css/carousel.css" rel="stylesheet">
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-	      <div class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	            <span class="sr-only">Toggle navigation</span>
-	          </button>
-	          <a class="navbar-brand" href="/">聚光塔</a>
-	        </div>
-	        <div class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav">
-	            <li><a href="/">首页 </a></li>
-	            <li><a href="/html/project/list/1/1.html">项目</a></li>
-	            <li><a href="/html/partner/list/1.html">人才</a></li>
-	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
-	            <li class="dropdown">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
-	              <ul class="dropdown-menu">
-	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
-	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
-	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
-	              </ul>
-	            </li>
-	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
-	            <li><a href="/about.html" target="_blank">关于我们</a></li>     
-	          </ul>
-	          <ul class="nav navbar-nav navbar-right" id="welcome">
-	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
-	            <li><a href="#" onclick="showLogin()">登录</a></li>
-	          </ul>
-	        </div><!--/.nav-collapse -->
-	      </div>
-	    </div>
+    <!-- <link href="./css/carousel.css" rel="stylesheet"> -->
 
+    <!-- ico & fonts-->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1425704323_4366138.css">
+    <link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext">
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
+    <!-- home page style -->
+    <link rel="stylesheet" href="/css/custom-home.css">
 
-          <div class="carousel-bg-1"></div>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1></h1>
-              <p></p>
-              <img src="./img/3.png" alt="">
-              <p>
-                <a class="btn btn-sm btn-primary" href="#" role="button" onClick="toDownLodaAndroidAppIndex()">安卓版</a>
-                <a class="btn btn-sm btn-primary" href="#" role="button" onClick="toDownLodaIphoneApp()">苹果版</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="carousel-bg-2"></div>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>找人才</h1>
-              <p>你可以完善个人材料和浏览别人的资料，找到合适的创业伙伴</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="carousel-bg-3"></div>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>线下活动.</h1>
-              <p>你可以参与创业者发起的线下活动，零距离接触创业资源</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="http://lightta.com/html/app/images/5.gif" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>项目</h2>
-          <p>初创项目简介，辅助你了解自己是适合加入哪个团队</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="http://lightta.com/html/app/images/6.gif" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>找合伙人</h2>
-          <p>你可以完善个人材料和浏览别人的资料，找到合适的创业伙伴</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="http://lightta.com/html/app/images/7.gif" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>线下活动</h2>
-          <p>你可以参与创业者发起的线下活动，零距离接触创业资源</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="http://lightta.com/html/app/images/8.gif" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>聊天</h2>
-          <p>你可以发起对话，直接和你感兴趣的人在线交流</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="http://lightta.com/html/app/images/9.gif" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>创业学堂</h2>
-          <p>你可以了解到最新的创业资讯，了解市场动态，创业方法</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="http://lightta.com/html/app/images/10.gif" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>分享</h2>
-          <p>看到好的活动、文章、分享给自己的团队，让大家一起成长</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
-
-	<!-- begin 登录层 -->
-      <!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
-		      </div>
-		      <div class="modal-body">
-		          <form class="form-signin" role="form" action="/user!login.action" method="post">
-			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
-			        <br>
-			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
-			         <br>
-			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-			      </form>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">忘记密码</button>
-		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-      <!-- end 登录层 -->
-      
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">广州联维物联网科技有限公司 版权所有</p>
-        <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- extra js -->
     <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="/js/jquery.cookie.js"></script>
     <script src="/js/lighttaCommon.js"></script>
+    <script src="/js/bootstrap-function.js"></script>
+
+    <!-- flexslider -->
+    <link rel="stylesheet" href="/css/flexslider.css">
+    <script src="/js/jquery.flexslider-min.js"></script>
+  </head>
+  
+  <body>
+
+    <header>
+      <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">LightTA</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="/html/project/list/1/1.html">项目</a></li>
+              <li><a href="/html/partner/list/1.html">人才</a></li>
+              <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
+              <li class="dropdown">
+                <a href="/html/cyxt/cyxt/list/1.html" class="dropdown-toggle" disabled>创业学堂 <span class="iconfont icon-xiala"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
+                  <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
+                </ul>
+              </li>
+              <li><a href="/about.html">关于</a></li>
+              <form class="navbar-form navbar-left" action="/user!login.action" method="post">
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" placeholder="登录邮箱" style="width:150px">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="pwd" class="form-control" placeholder="密码" style="width:150px">
+                </div>
+                <button type="submit" class="btn btn-transfer">登录</button>
+              </form>
+              <li>
+                <button type="button" class="btn btn-info navbar-btn" style="border: 1px solid;">体验一下</button>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="featured">
+      <!-- Slider -->
+      <div id="main-slider" class="jumbotron flexslider">
+          <ul class="slides">
+            <li>
+              <img src="" alt="" height="520px" width="auto" />
+              <div class="desc-box" style="
+              left: 25%;
+              right: 25%;
+              width: 50%;
+              text-align: center;
+              ">
+                  <h1>LightTA | 照亮前方的路</h1> 
+                  <p>如果你是创业者或者是渴望自我的人<br>
+                  如果你是技术牛人，正在寻找团队<br>
+                  欢迎你到聚光塔上来！</p>  
+                  <a href="/html/app/downLoad/lightta(beta).apk" class="btn btn-default">Android</a>
+                  <a href="https://itunes.apple.com/cn/app/lightta/id910428313?mt=8" class="btn btn-default">IOS</a>
+              </div>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <div class="desc-box">
+                <h1>LightTA | 项目</h1>
+                <h1><span class="iconfont icon-faxian" style="font-size:1em;font-weight: 100;"></span></h1>
+                <p>初创项目简介，辅助你了解自己是适合加入哪个团队</p>
+                <a href="/html/project/list/1/1.html" class="btn btn-default">去看一下</a>
+              </div>
+            </li>
+            <li>
+              <img src="" alt="" />
+              <div class="desc-box">
+                <h1>LightTA | 找合伙人</h1>
+                <h1><span class="iconfont icon-lianxiren" style="font-size:1em;font-weight: 100;"></span></h1>
+                <p>你可以完善个人材料和浏览别人的资料，找到合适的创业伙伴</p>
+                <a href="/html/partner/list/1.html" class="btn btn-default">去看一下</a>
+              </div>
+            </li>
+          </ul>
+      </div>
+      <!-- end slider -->
+    </section>
+
+    <section id="description">
+      <div style="text-align:center">
+        <h1 style="color:black">LightTA | 聚光塔</h1>
+        <p>一个专注于为创业者提供项目推介和人才匹配的平台</p>
+        <a href="/about.html">关于我们</a>
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="container">
+        <!-- 项目 & 人才 -->
+        <div class="row">
+          <div class="col-md-4 col-md-offset-1">
+            <div class="box">
+              <h1><span class="iconfont icon-faxian" style="font-size:1em;font-weight: 100;"></span></h1>
+              <h3>项目</h3>
+              <p>初创项目简介，辅助你了解自己是适合加入哪个团队</p>
+              <a href="/html/project/list/1/1.html">了解更多</a>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <div class="box">
+              <h1><span class="iconfont icon-lianxiren" style="font-size:1em;font-weight: 100;"></span></h1>
+              <h3>找合伙人</h3>
+              <p>你可以完善个人材料和浏览别人的资料，找到合适的创业伙伴</p>
+              <a href="/html/partner/list/1.html">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <!-- 线下 聊天 学堂 分享 -->
+        <div class="row">
+          <div class="col-md-3">
+            <div class="box">
+              <h1><span class="iconfont icon-huodong" style="font-size:1em;font-weight: 100;"></span></h1>
+              <h5>线下活动</h5>
+              <p>你可以参与创业者发起的线下活动，零距离接触创业资源</p>
+              <a href="/html/project/list/1/1.html">了解更多</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box">
+              <h1><span class="iconfont icon-talk" style="font-size:1em;font-weight: 100;"></span></h1>
+              <h5>聊天</h5>
+              <p>你可以发起对话，直接和你感兴趣的人在线交流</p>
+              <a href="/html/project/list/1/1.html">了解更多</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box">
+              <h1><span class="iconfont icon-wodexiangmu01" style="font-size:1em;font-weight: 100;"></span></h1>
+              <h5>创业学堂</h5>
+              <p>你可以了解到最新的创业资讯，了解市场动态，创业方法</p>
+              <a href="/html/project/list/1/1.html">了解更多</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="box">
+              <h1><span class="iconfont icon-fenxiang" style="font-size:1em;font-weight: 100;"></span></h1>
+              <h5>分享</h5>
+              <p>看到好的活动、文章、分享给自己的团队，让大家一起成长</p>
+              <a href="/html/project/list/1/1.html">了解更多</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3" style="text-align:center">
+            <p>广州联维物联网科技有限公司 版权所有</p>
+            <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
+
+  <script>
+    $('#main-slider').flexslider({
+        namespace           : "flex-",           //{NEW} String: Prefix string attached to the class of every element generated by the plugin
+        selector            : ".slides > li",    //{NEW} Selector: Must match a simple pattern. '{container} > {slide}' -- Ignore pattern at your own peril
+        animation           : "fade",            //String: Select your animation type, "fade" or "slide"
+        easing              : "swing",           //{NEW} String: Determines the easing method used in jQuery transitions. jQuery easing plugin is supported!
+        direction           : "horizontal",      //String: Select the sliding direction, "horizontal" or "vertical"
+        reverse             : false,             //{NEW} Boolean: Reverse the animation direction
+        animationLoop       : true,              //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+        smoothHeight        : true,             //{NEW} Boolean: Allow height of the slider to animate smoothly in horizontal mode
+        startAt             : 0,                 //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+        slideshow           : true,              //Boolean: Animate slider automatically
+        slideshowSpeed      : 7000,              //Integer: Set the speed of the slideshow cycling, in milliseconds
+        animationSpeed      : 600,               //Integer: Set the speed of animations, in milliseconds
+        initDelay           : 0,                 //{NEW} Integer: Set an initialization delay, in milliseconds
+        randomize           : false,             //Boolean: Randomize slide order
+         
+        // Usability features
+        pauseOnAction       : true,              //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+        pauseOnHover        : false,             //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+        useCSS              : true,              //{NEW} Boolean: Slider will use CSS3 transitions if available
+        touch               : true,              //{NEW} Boolean: Allow touch swipe navigation of the slider on touch-enabled devices
+        video               : false,             //{NEW} Boolean: If using video in the slider, will prevent CSS3 3D Transforms to avoid graphical glitches
+         
+        // Primary Controls
+        controlNav          : true,              //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+        directionNav        : true,              //Boolean: Create navigation for previous/next navigation? (true/false)
+        prevText            : "",        //String: Set the text for the "previous" directionNav item
+        nextText            : "",            //String: Set the text for the "next" directionNav item
+         
+        // Secondary Navigation
+        keyboard            : true,              //Boolean: Allow slider navigating via keyboard left/right keys
+        multipleKeyboard    : false,             //{NEW} Boolean: Allow keyboard navigation to affect multiple sliders. Default behavior cuts out keyboard navigation with more than one slider present.
+        mousewheel          : false,             //{UPDATED} Boolean: Requires jquery.mousewheel.js (https://github.com/brandonaaron/jquery-mousewheel) - Allows slider navigating via mousewheel
+        pausePlay           : false,             //Boolean: Create pause/play dynamic element
+        pauseText           : 'Pause',           //String: Set the text for the "pause" pausePlay item
+        playText            : 'Play',            //String: Set the text for the "play" pausePlay item
+         
+        // Special properties
+        controlsContainer   : "",                //{UPDATED} Selector: USE CLASS SELECTOR. Declare which container the navigation elements should be appended too. Default container is the FlexSlider element. Example use would be ".flexslider-container". Property is ignored if given element is not found.
+        manualControls      : "",                //Selector: Declare custom control navigation. Examples would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
+        sync                : "",                //{NEW} Selector: Mirror the actions performed on this slider with another slider. Use with care.
+        asNavFor            : "",                //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
+    });
+  </script>
+
 </html>
