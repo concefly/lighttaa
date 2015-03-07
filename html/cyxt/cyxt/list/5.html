@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>LightTa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/flat-ui.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+
+  <!--begin 一级菜单-->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	          </button>
+	          <a class="navbar-brand" href="/">聚光塔</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="/">首页 </a></li>
+	            <li><a href="/html/project/list/1/1.html">项目</a></li>
+	            <li><a href="/html/partner/list/1.html">人才</a></li>
+	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
+	            <li class="active"><a href="/html/cyxt/rcfl/list/1.html">人才福利</a></li>
+	            <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
+	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
+	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
+	              </ul>
+	            </li>
+	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
+	            <li><a href="/about.html" target="_blank">关于我们</a></li>       
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right" id="welcome">
+	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
+	            <li><a href="#" onclick="showLogin()">登录</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+  <!--end 一级菜单-->
+  <div class="container">
+    <div style="height:60px;"></div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="我想要知道..." id="keyWord">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="search()">搜索</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+    </div>
+    <div style="height:30px;"></div>
+    <!--begin list-->
+    <div id="list">
+     	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/dceaf6ef-2d9a-4b80-b9b5-cc368b7e115d.html' target="_blank">【市场分析】挂号是互联网医疗的一个好入口吗？</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/dceaf6ef-2d9a-4b80-b9b5-cc368b7e115d.html' target="_blank">
+	            <img src="/img/article/1415439730481.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：10月28日，趣医网董事长李志宣布“从11月1日起，投入4亿元，实施免费挂号活动”，用户使用“去医院”APP挂号，可免除普通挂号费，不限挂号次数、不限就诊科室，全国各地的用户均可在“去医院”APP的已上线医院使用，并称此举是为了“改变患者的就诊习惯和培育医疗移动互联网市场”。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/5bd6e33f-8445-4202-b5f1-299b462af4b2.html' target="_blank">【市场分析】互联网的女性生意经：5个热门女性消费产品盘点</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/5bd6e33f-8445-4202-b5f1-299b462af4b2.html' target="_blank">
+	            <img src="/img/article/1415438321887.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：女性平均收入的提升正在倾斜传统家庭收入的天平，同时女性消费对经济的推动正在成为经济学家们关心的课题，由此催生出的“她经济”使得越来越多的企业开始从女性角度审视自己的产品定位和受众人群，同时众多的互联网产品也开始将目光投向女性群体，一些基于女性消费心理和习惯，深度挖掘女性用户需求而研发出来的产品，在受到女性用户欢迎的同时也获得资本市场的青睐。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/dadd5073-4ebe-4775-b634-dd752da0b457.html' target="_blank">【市场分析】反思O2O模式：为何没有飞天的猪</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/dadd5073-4ebe-4775-b634-dd752da0b457.html' target="_blank">
+	            <img src="/img/article/1415371079922.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：小编导读：​ O2O，目前互联网最火的符号之一，这两年，针对传统行业转型、移动化、本地化服务等等，几乎只要是个模式，总要摊上一点O2O基因，似乎这是目前投融界最时髦的事业，都说是风口，为何很难看到一飞冲天的标杆。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/9699b687-1866-4243-b5af-aea9100f7d3e.html' target="_blank">【App开发】怀孕 10 个月可以，开发 App 超过 3 个月就绝对不行！</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/9699b687-1866-4243-b5af-aea9100f7d3e.html' target="_blank">
+	            <img src="/img/article/1415369438587.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：Kuty Shalev 创办的 最低可行产品（Minimum Viable Product，MVP）才符合现在的生态，就是鼓励先推出原型，再视市场反应调整产品。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/a6943e7a-76c4-45a1-9d15-6462173505c4.html' target="_blank">【产品设计】张小龙：APP产品经理必须要懂的30条原则</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/a6943e7a-76c4-45a1-9d15-6462173505c4.html' target="_blank">
+	            <img src="/img/article/1415266594467.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：手机是肢体的延伸，和人是一体的（通过各种传感器）；而PC是外物，即外部环境。移动互联网产品不是简单的PC到手机的移植。做没有web的移动互联网产品该怎么做？这对中国IT人来说是全新的课题。下面整理出的30条原则中，可以看到一些对于APP产品设计和推广的清醒认识，它们来自于微信创始人张小龙的演讲PPT，老汪编辑整理。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/411414e1-b0b7-4bcc-b7ac-dc41cef2e7b4.html' target="_blank">【如何融资】打动投资人的7种方法</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/411414e1-b0b7-4bcc-b7ac-dc41cef2e7b4.html' target="_blank">
+	            <img src="/img/article/1415329380567.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：     投资人每周要约见多少个创业者?想要在这些人中脱颖而出，打动投资人并且最终成功获得投资?以下7种方式能给你带来帮助。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/3d96e0e4-d61e-4008-a683-da46700947c8.html' target="_blank">【运营推广】APP如何做营销？22条名言为你助力</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/3d96e0e4-d61e-4008-a683-da46700947c8.html' target="_blank">
+	            <img src="/img/article/1415329872024.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：       无论是生活还是工作，我们每天都需要灵感，特别是当你努力打造一家成功的企业时。正如我自己所经历及我所见到的那样，创业生活非常容易让人气馁。
+打造一家移动先行的企业，最艰难的一个方面就是努力让顾客使用你的APP(下载)，并且让他们一次又一次的回访(保留)。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/7f469cf7-d2dd-4724-806a-c89b95716032.html' target="_blank">【市场分析】工具APP之成长路径：怎样寻找商业化</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/7f469cf7-d2dd-4724-806a-c89b95716032.html' target="_blank">
+	            <img src="/img/article/1415265019333.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：    观近年来工具类APP的成长路径，大致有如此规律：早期以工具切入市场，随后拓展产品、提升用户体验，进而在某个垂直细分领域为用户带来平台化的服务，有些甚至开始尝试硬件化拓展。 </p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/666482c0-84c7-46a4-83c4-2feb21b8dc99.html' target="_blank">【用户体验】产品经理看过来！改善应用用户体验的7种途径</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/666482c0-84c7-46a4-83c4-2feb21b8dc99.html' target="_blank">
+	            <img src="/img/article/1415331065119.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：如果说影响应用排名的最大因素是什么?那一定是用户体验了。再也没有什么比它更重要的了，但是很多开发商在忙着开发和发布新应用的时候，往往会忽略掉这个过程中最重要的因素，那就是：用户。</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/cyxt/cyxt/content/552ccee8-14e8-4a82-9b39-85160b2ce015.html' target="_blank">【产品经理】产品经理必看书籍推荐</a>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/cyxt/cyxt/content/552ccee8-14e8-4a82-9b39-85160b2ce015.html' target="_blank">
+	            <img src="/img/article/1415241494902.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>摘要：导语：在“神一样的产品经理凭什么那么神”这篇文章中，我曾结合自己的工作实践总结过产品经理需要的一些基本素质，如市场洞察、抽象概括、创新想象、心思细腻、热爱产品、具备一定的企业家精神等等，这些基本素质既包括IQ层面也涉及很多EQ层面的。</p>
+	      </div>
+	    </div>
+    </div>
+    <!--end list-->
+    <!--begin 翻页-->
+    <div style="width:100%;text-align:center;">
+      <div class="pagination pagination-danger">
+
+        <a href="/html/cyxt/cyxt/list/4.html" class="btn btn-danger previous" id="prePage">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+       <a href="#" onclick="turnPage('pre')" class="btn btn-danger previous" id="searchPrePage" style="display:none">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+        <ul>
+          <li><a id="total">共183条</a ><a id="totalPage">共19页</a ><a id="pageIndex">第5页</a ></li>
+        </ul>
+
+        <a href="/html/cyxt/cyxt/list/6.html" class="btn btn-danger next" id="nextPage">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+        <a href="#" onclick="turnPage('next')" class="btn btn-danger next" id="searchNextPage" style="display:none">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+
+      </div>
+    </div>
+    <!--begin 翻页-->
+    
+    <div class="well well-lg">
+    <p>在关注创业信息？想找人才，找创业项目，交流创业经验？想获悉更多最新的线下交流活动？聚光塔创业社交应用，帮助创业者克服创业过程中的困难~</p>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaAndroidApp()">
+            下载android客户端
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaIphoneApp()">
+            下载iOS客户端
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- begin 登录层 -->
+      <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
+		      </div>
+		      <div class="modal-body">
+		          <form class="form-signin" role="form" action="/user!login.action" method="post">
+			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
+			        <br>
+			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
+			         <br>
+			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" onClick="forgetPassword()">忘记密码</button>
+		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+      <!-- end 登录层 -->
+      <footer class="footer">
+	    <div class="container">
+	      <p class="text-muted">广州联维物联网科技有限公司 版权所有 |<a href="/about.html">关于我们</a></p>
+	      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+	    </div>
+	  </footer>      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://cdn.zenkr.com/bootstrap/3/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/flat-ui.min.js"></script>
+    <script src="/js/application.js"></script>
+    
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/lighttaCommon.js"></script>
+  </body>
+</html>
+
+<script>
+    $(function(){ 
+	    //回车事件
+	    document.onkeydown = function(e){ 
+	        var ev = document.all ? window.event : e;
+	        if(ev.keyCode==13) {
+	        	search();
+	         }
+	    }
+	});
+
+    //获取数据
+	var pageIndex = 1;//第几页
+	function getData(pageIndex){
+		var keyWord = $("#keyWord").val()
+	    $.ajax({
+	        type: "post", 
+	        url: "/article!getArticlesList.action",
+	        data: {pageCount:10,pageIndex:pageIndex,keyWord:keyWord},
+	        dataType: "json",
+	        success: function(data){
+	       	         var list = data.list;
+	       	         var total = data.total;
+	       	         var totalPage = data.totalPage;
+	       	         pageIndex = data.pageIndex;
+	       	         $("#total").text("共"+total+"条");
+	       	         $("#totalPage").text("共"+totalPage+"页");
+	       	         $("#pageIndex").text("第"+pageIndex+"页");
+	       	         $("#searchPrePage").show();
+	                 $("#searchNextPage").show();
+	                 $("#prePage").hide();
+	                 $("#nextPage").hide();                   
+	       	         if(pageIndex==1){//如果是第一页，则上一页不能点
+	       	        	$("#searchPrePage").hide();
+	       	         }else{
+	       	        	$("#searchPrePage").show();
+	       	         }
+	       	         if(pageIndex==totalPage){//如果是最后，则下一页不能点
+	     	        	$("#searchNextPage").hide();
+	     	         }else{
+	     	        	$("#searchNextPage").show();
+	     	         }
+	          	     $('#list').empty();
+	                 $.each(list,function(idx,item){     
+	                   	   var str =  "<div class='row pjt-list'>"+
+										  "<div class='col-xs-9 col-xs-offset-3'>"+
+											"<h4><a  href='"+item.url+"' target='_blank'>"+item.title+"</a>"+
+											"</h4>"+
+										  "</div>"+
+										  "<div class='col-xs-3'>"+
+											"<a  href='"+item.url+"' target='_blank'>"+
+												"<img src='"+item.cover+"' class='img-rounded' style='width:80%;'>"+
+											"</a>"+
+										  "</div>"+
+										  "<div class='col-xs-9'>"+
+											"<p>摘要："+item.summary+"</p>"+
+										  "</div>"+
+										"</div>";
+	                   	   $("#list").append(str); 
+	                   	})                      
+	         }
+	    });
+	}
+	//翻页
+	function turnPage(turning){
+		if(turning=="next"){
+			pageIndex = pageIndex + 1;
+			getData(pageIndex);
+		}
+		if(turning=="pre"){
+			pageIndex = pageIndex - 1;
+			getData(pageIndex);
+		}
+		
+	}
+	//搜索
+	function search(){
+		getData(pageIndex);
+	}
+    </script>

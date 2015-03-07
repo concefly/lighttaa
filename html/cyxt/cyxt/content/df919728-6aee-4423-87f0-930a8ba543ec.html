@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="聚光塔LightTa--【创业经验】说再见：如何为一款失败的产品划上休止符">
+    <meta name="author" content="聚光塔--LightTa">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>【创业经验】说再见：如何为一款失败的产品划上休止符</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/flat-ui.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <!--begin 一级菜单-->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	          </button>
+	          <a class="navbar-brand" href="/">聚光塔</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="/">首页 </a></li>
+	            <li><a href="/html/project/list/1/1.html">项目</a></li>
+	            <li><a href="/html/partner/list/1.html">人才</a></li>
+	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
+	            <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
+	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
+	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
+	              </ul>
+	            </li>
+	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
+	            <li><a href="/about.html" target="_blank">关于我们</a></li>        
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right" id="welcome">
+	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
+	            <li><a href="#" onclick="showLogin()">登录</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+  <!--end 一级菜单-->
+
+  <div class="container">
+      <div style="height:60px;"></div>
+      <center><h4>【创业经验】说再见：如何为一款失败的产品划上休止符</h4></center>
+      <div style="height:30px;"></div>
+      <img src="/img/article/1415623090131.jpg" style="width:0px; height:0px; overflow:hidden"/>
+      <div>
+         <p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<img src="http://img0.tech2ipo.com/upload/img/article/2014/10/1412665939639.jpg" title="1" /> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">原文地址：SmashingMagazine，本译文由创之网（chuang.pro）为您提供！</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">技术的开放性是互联网真正的威力所在。只要感兴趣，任何人都能创建一个网站，甚至任何有想法的人都能创造出下一个 Facebook。无关性别、宗教或种族，只要有写代码的心和创造的渴望，技术便随你掌控。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">创业者们心中无边的激情也正是源于这股力量——他们每一个人都曾经在脑中畅想自己就是「下一个伟大的网站或者应用程序」的开创者。然而当热情褪尽，人们不得不面对残酷的现实，许多新产品都失败了。那么当你的产品不幸失败，作为开发者你应该怎么做呢？如何关闭产品才能使其光荣隐退，芳名尚存，也为你和用户保留余地，好聚好散呢？</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">这篇文章会涉及：关闭一款产品的关键步骤，以及在关闭的过程中，如何与你的用户沟通。（请注意：本文的内容是关于关闭一款产品或者服务。然而，通常产品的关闭还伴随着公司倒闭，但本文不涉及后者。）</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">失败乃家常便饭，何足为惧？</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">在现今的商业世界，关闭产品作为一个话题，似乎无足轻重。上至《时代周刊》，下至《哈佛商业评论》，总是乐此不疲地提醒设计师和创业公司，风险和失败至关重要，避无可避。然而鲜有文字涉及实际关闭产品的过程——关闭产品的代价是什么，需要考虑什么因素，会有什么后果。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">相信许多读者在职业生涯中都经历过失败的产品。面对失败，需要采取的措施并不是千篇一律的。有些产品，当创始人意识到用户真的少的可怜，在忍受过漫长而沉默的清醒之后，他们只需要默默地接受失败，但是更多的情况下，会需要你勇敢地站出来，向用户承认有些事情你们真的无能为力，然后采取实际行动，决定是否要关闭产品。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">关于产品失败的原因已经是老生常谈，但究竟应该保留产品让它默默运行还是彻底关闭，关键取决于产品给公司带来了多大负担。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">当你心生想要关闭产品的想法，可能是由于它已经在以下方面变成你的负担：</span> 
+</p>
+<blockquote style="vertical-align:baseline;font-size:14px;background-color:#F1F1F1;color:#878787;font-family:Arial, Helvetica, sans-serif;">
+	<ul class=" list-paddingleft-2" style="vertical-align:baseline;background-color:#FFFFFF;">
+		<li style="vertical-align:baseline;">
+			<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+				<span style="font-size:16px;">财务负担</span> 
+			</p>
+		</li>
+	</ul>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">产品是否还在盈利？所有产品都需要开发和维护费用。就算是个只需要租用服务器的网站，那也是一笔财务支出。如果产品入不敷出，那么它实际已经造成财务负担。</span> 
+	</p>
+	<ul class=" list-paddingleft-2" style="vertical-align:baseline;background-color:#FFFFFF;">
+		<li style="vertical-align:baseline;">
+			<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+				<span style="font-size:16px;">资源负担</span> 
+			</p>
+		</li>
+	</ul>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">你有足够人手来保证客户服务质量吗？用户会在线提问，会提出需求，会在系统后台写反馈单，这些问题都需要人手来解答。这些问题不仅需要分配客户支持的资源，有时也需要开发人员来实现需求。如果公司缺乏人力或者资源来保证高质量的客户服务，那么可以说，产品带来了资源负担。</span> 
+	</p>
+	<ul class=" list-paddingleft-2" style="vertical-align:baseline;background-color:#FFFFFF;">
+		<li style="vertical-align:baseline;">
+			<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+				<span style="font-size:16px;">技术负担</span> 
+			</p>
+		</li>
+	</ul>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">为了保证产品完全正常运行，支出几何？产品漏洞、可用性等问题，会在使用过程中暴露出来，解决它们需要计划和开发。如果公司承担不起解决问题的资源，产品就成为了技术负担。</span> 
+	</p>
+	<ul class=" list-paddingleft-2" style="vertical-align:baseline;background-color:#FFFFFF;">
+		<li style="vertical-align:baseline;">
+			<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+				<span style="font-size:16px;">遗留负担</span> 
+			</p>
+		</li>
+	</ul>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">产品会影响公司的其他业务吗？通常多个产品会共享一份代码库。如果这个产品增加了其他（更成功的）产品开发人员的工作量，它就带来了遗留负担。</span> 
+	</p>
+</blockquote>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">对开发者来说，决定保留产品在后台运行还是彻底关闭，是一个非常私人、主观的决定。比如，要把产品归为财务负担看似简单，但却忽略了产品以后的表现。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">归根结底，这是一个主观的决定，所以最好综合考虑四个因素。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">「其实我大可以撒手不管，任其自生自灭，不对吗？」</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">让产品继续存在，但终止一切后续开发和服务，这看起来简单得令人心动。通常这么做的，要么是大型产品，要么是因为产品所属公司被收购。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">比如 当 Adobe 宣布放弃 Fireworks 时，它的公开声明中明确表示，后续他们只会花最少的成本支持 Fireworks 运行：</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">「尽管 Adobe 不再为 Fireworks 开发新功能……我们会提供必要的安全更新，以及 Bug 修复补丁。我们会让 Fireworks 更新到 Mac OS X 和 Windows 操作系统的下一个版本。等我们有了 Windows 和 Mac 操作系统下一个版本的具体细节，我们也许会酌情进行更改。」</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">（注意：关于 Bug 修复补丁的措辞是「也许」，并不是板上钉钉的承诺。）</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">这个方法看起来最容易，也最诱人。只需要告诉用户这款产品还在，只是厂商不会再提供更新而已。（用户得以继续使用它），所以不会造成太大反响，同时厂商还无需解释关闭原因，一举两得。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">对于用户数量多的大型产品来说，这似乎是个可行方案，但有个非常关键的问题，它到底真的解决了问题，还是只是权宜之计，该来的还是躲不掉？</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">就算你无意再开发产品的新功能，用户报告了系统错误怎么办，要不要去解决？还是以 Fireworks 为例，Adobe 能保证 Fireworks 与新系统兼容吗？</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">如果无法提供同等程度的支持，保证兼容性和错误即时修复，宣布终止开发就和关闭产品区别不大，同样会引起用户反感，甚至影响公司的整体名誉、进而影响到其他产品。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">综上所述，你必须步步为营，考虑每一步行动的后果。如果不能保证产品运营所需的技术和资源，那就别再犹豫，直接关闭产品吧。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">关闭产品有多痛，一场分手那么痛</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">所以你终于决定要关闭你的产品，因为它已经变成过于沉重的负担，关闭掉对公司是一件好事。那么接下来该怎么做呢？</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">用户和产品的关系非常私人，只可意会不可言传。当初你信誓旦旦，说你的产品能够改变世界，美化生活，所以用户们相信了你的话，为你的产品费心费力。不管你的产品是否免费，用户都投入了宝贵的时间，精力和支持——所以你应当付出尊重。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">关闭产品就像是让它和用户分手一般，你要告诉用户，产品不再和他们有瓜葛，未来无法携手共度。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">电影里有一句老话说得好「这并不是你的错，是我不好」，这就是关闭产品的宗旨。用户表示了支持，但如今你不得不关闭产品。你要理解用户，当他们给你负面的反馈，你要明白这并不是他们的过错。无论是沮丧或是愤怒都是因为他们失去了产品，所以做好准备，从容优雅地处理这些反馈。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="background-color:#337FE5;">第一部分：准备工作</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">在关闭产品之前，一定要做好充分准备。因为不管你计划得多好，在关闭过程中总免不了磕磕绊绊——所以不仅要考虑充分，还要留有余地。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">下面是整理好的 10 个步骤。每个产品都独一无二，所以你可以酌情更改或添加，但这些给你提供了良好的基础，让你能从容应对任何突发状况。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">在关闭产品前 1 至 6 个月</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第 1 步：发出通知，告诉用户产品即将关闭</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">你的首要任务就是告知用户，产品即将关闭，越多人知道越好（之后我们会讲到如何起草这部分的公告）。越早告诉用户，他们就会有越多时间来消化这个信息，采取行动，避免他们手忙脚乱，惊慌失措。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">你最起码得提前一个月告知用户。如果产品中的用户数据需要导出（参见下面的第 2 步），那么就提前至 2 到 3 个月。让用户有充足时间备份数据，寻找合适的替代品。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">在你能负担的情况下，给用户留的时间越多越好。你的用户得知产品关闭，会觉得难过，所以任何一丁点匆忙都只会招致沮丧和怨恨。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第 2 步：给用户指条明路</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">你该如何来减轻用户的负担？你是否可以找到好用的替代品、让用户把数据迁移过去呢？就算你的产品已经关闭，总有办法找到替代。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">设身处地为你的用户想想，假如你是某个产品的忠实粉丝，有一天它要关闭了，你最想知道什么，你最希望得到怎样的对待？使用「游击可用性测试」来了解如何尽可能地减少个中痛苦。在关闭产品的前提下，很少有人提及可用性测试，但假设你对产品的用户体验和可用性的期待始终如一，你有什么理由不测试呢？你完全有责任继续为用户提供同等的服务。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<img src="http://img0.tech2ipo.com/upload/img/article/2014/10/1412665940607.jpg" title="2" /> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">比如 Readmill，在发出关闭通告后，在网站上给用户提供了一份「转移步骤」。</span> 
+</p>
+<blockquote style="vertical-align:baseline;font-size:14px;background-color:#F1F1F1;color:#878787;font-family:Arial, Helvetica, sans-serif;">
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">图中文字：</span> 
+	</p>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">给读者们的转移步骤</span> 
+	</p>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">如果你想把存储在 Readmill 的书籍和数据转移出来，以下是一些简单的步骤。</span> 
+	</p>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">从这里开始。</span> 
+	</p>
+</blockquote>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">写着「GO TO EXPORT」（导出）的转出按钮。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">如何做：</span> 
+</p>
+<ul class=" list-paddingleft-2" style="vertical-align:baseline;font-family:Arial, Helvetica, sans-serif;font-size:14px;background-color:#FFFFFF;">
+	<li style="vertical-align:baseline;">
+		<p style="vertical-align:baseline;font-size:14px;color:#333333;">
+			<span style="font-size:16px;">导出阅读历史和原始数据</span> 
+		</p>
+	</li>
+	<li style="vertical-align:baseline;">
+		<p style="vertical-align:baseline;font-size:14px;color:#333333;">
+			<span style="font-size:16px;">下载书籍</span> 
+		</p>
+	</li>
+	<li style="vertical-align:baseline;">
+		<p style="vertical-align:baseline;font-size:14px;color:#333333;">
+			<span style="font-size:16px;">转移 DRM 证书</span> 
+		</p>
+	</li>
+	<li style="vertical-align:baseline;">
+		<p style="vertical-align:baseline;font-size:14px;color:#333333;">
+			<span style="font-size:16px;">从推荐服务中挑选一个，继续使用。</span> 
+		</p>
+	</li>
+</ul>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第 3 步：关闭注册</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">请在宣布产品关闭之后，即刻关闭注册通道。关闭通告可能会引来流量和关注，但是新注册用户只会让沟通更难进行，弊大于利。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">比如那些错过关闭通告的用户。如果他们注册了你的产品，你又得绞尽脑汁，和他们说明产品即将关闭了（相信我，这绝对不是什么愉快的用户体验）。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第 4 步：停止一切附带或者自动的市场推广</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">你的产品在当初推广的时候可能有网页或者自己的网站。他们本来的目的能促使用户注册或者购买你的产品，但现在他们已经失去存在的意义。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">那么你能否用这些网页来帮助你进行关闭产品的沟通呢？也许没有必要删除所有的内容，因为大部分还是相关的，但也许可以把网站的主要目的从促进注册，增加销量转变为通知用户，使其慢慢接受产品的关闭。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">你或许想想，以前有没有做过邮件营销？现在也是时候停止了。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第 5 步：更新产品支持</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">如果你的产品提供在线支持，那么你需要进行更新，把关闭产品所涉及的信息以及用户可能的新需求放上去。接下来，用户依然像以往一样在使用过程中需要你的协助，只不过主题变成产品关闭遇到的问题，以及你建议过的后续步骤（参见上面的第 2 步）。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">就像第 2 步所说，你应该通过和用户直接沟通，跟踪他们实施的实际成功率，来研究得出用户的最新需求。只有设身处地地明白用户的思考模式，你才能在这个过程中真正地帮助用户，同时减少你收到的问题。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">产品关闭前一个星期</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第 6 步：邮件提醒</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">随着信息时代的发展，人们每天日理万机，疲于处理各种各样的信息。所以你的关闭通知很有可能被遗忘在角落。在正式关闭产品之前一个星期，发送一次邮件提醒，给他们时间采取行动，避免惊慌失措。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">关闭产品前一天</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第 7 步：再次发送邮件提醒</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">如果想要提醒读者，这是最后一次机会了。有些人可能会觉得你过于频繁地提及这次关闭，但这总好过用户错过关闭通知。你之前的邮件也有可能被归为垃圾邮件，所以用户忽略了。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">关闭产品后</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第 8 步：清偿债务</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">你和用户之间的债清了没有？一旦你关闭产品，最好清偿所有重要的款项，主动向用户支付费用。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">对于会员，在产品关闭时，弄清楚你是否还有权向他们收费？这阶段是免费的吗？不同产品，处理方式不同。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第 9 步：处理网址和邮箱地址</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">是否要像 Everpix 和 Readmill 一样，关闭之后依然留下域名和官方网站呢？也许你可以和前者一样，在主页贴上过去和现在的有用的信息，并为用户可能想保留的信息提供链接。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">如果产品还涉及邮箱地址，那么也要进行处理——是继续维护邮箱，还是开启自动回复功能，告知用户此邮箱已经作废，为他们提供更多关闭信息的链接，或给他们留一个邮箱地址来提问？</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">给用户至少留下一个联系渠道至关重要，这样用户需要数据或者对账户有问题时能够获取帮助。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<img src="http://img0.tech2ipo.com/upload/img/article/2014/10/1412665941912.jpg" title="3" /> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span>Everpix 保留它的网站，让用户能了解它的历史，访问他们的数据。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span>图中文字：</span> 
+</p>
+<ul class=" list-paddingleft-2" style="vertical-align:baseline;font-family:Arial, Helvetica, sans-serif;font-size:14px;background-color:#FFFFFF;">
+	<li style="vertical-align:baseline;">
+		<p style="vertical-align:baseline;font-size:14px;color:#333333;">
+			<span>Everpix（粗体字）</span> 
+		</p>
+	</li>
+	<li style="vertical-align:baseline;">
+		<p style="vertical-align:baseline;font-size:14px;color:#333333;">
+			<span>我们已倾尽所有。再次鸣谢。</span> 
+		</p>
+	</li>
+	<li style="vertical-align:baseline;">
+		<p style="vertical-align:baseline;font-size:14px;color:#333333;">
+			<span>我们会深切思念你们的。</span> 
+		</p>
+	</li>
+	<li style="vertical-align:baseline;">
+		<p style="vertical-align:baseline;font-size:14px;color:#333333;">
+			<span>点此查看我们的故事或者浏览商业数据。</span> 
+		</p>
+	</li>
+</ul>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第 10 步：关闭遗留账户</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">你的产品有没有关联账户？比如 Twitter、Facebok 等社交媒体账户，应该如何处理？就像对待网站一样，可以出于「见证历史」的想法留下其中一部分，其余的关闭即可。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">比如说你想留下 Facebook 主页，你会回复私信和留言吗？感兴趣的用户如果无法得到回复就可能给公司带来负面影响。所以不要为了图省事保留那些账户，维护他们依然是一项任务。如果不能做到，强烈建议关闭那些账户。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">请注意，这些步骤并非十全十美，（每个产品都有自己的特点，你可以在此基础上酌情添加）。如果你在关闭前就能做到这些步骤，那么无论遇到任何突然冒出的棘手问题，你都能从容应对。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">目前为止，大部分问题都搞定了，接下来最令人焦头烂额的问题来了：究竟如何平和从容地告诉用户，「我们的产品即将关闭」？</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">第二部分：体面的告别</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">告知用户关闭产品的消息是最痛苦的事情之一。对你自己和你的用户，你都必须完全坦诚，而这对你来说是近乎残忍的，这一刻你说的每一句话，每一分语气，都充满未知的风险。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">为了让你尽可能精确地传达这个信息，我们在此列出了你必须包含的关键条款。每一项都因公司、因用户而异，但把它们结合起来，就能让用户知道接下来会发生的事情，并且让他们明白，产品关闭对他们自己意味着什么。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">发出这个信息必须使用两个渠道：通过邮件或者产品网站。也许你对于公开发布这一消息有些抗拒，但你要想到，并不是所有用户都会阅读邮件。有可能的话，最好强制让现有用户阅读关闭通告至少一次。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<img src="http://img0.tech2ipo.com/upload/img/article/2014/10/1412665942862.jpg" title="4" /> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">Readmill 通过它的官网和邮件向用户传达了它们最后要说的话。图中是 Readmill 的结束语截图。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">告诉用户接下来的事</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">用户们一定很关心具体的情况。尽量清晰、准确地措辞，告知用户即将发生的改变，以及产品关闭时间。是关闭产品还是被包含到其他产品中？整个关闭流程如何进行（以上是一个时间表的示例）？</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<img src="http://img0.tech2ipo.com/upload/img/article/2014/10/1412665944353.jpg" title="5" /> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">Google 用一个页内弹窗告知 Reader 用户：产品的关闭时间，并提供了「了解更多」的超链接。</span> 
+</p>
+<blockquote style="vertical-align:baseline;font-size:14px;background-color:#F1F1F1;color:#878787;font-family:Arial, Helvetica, sans-serif;">
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">图中文字：</span> 
+	</p>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">Google Reader 在 2013 年 7 月 1 日之后将无法继续使用。点此了解更多。</span> 
+	</p>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">「OK」按钮。</span> 
+	</p>
+</blockquote>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">解释关闭原因</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">就像人们结束任何一段关系一样，用户想要了解真正的原因。此时绘声绘色地讲述一个看似积极的故事只会适得其反。也许是因为产品入不敷出、或者你的私人原因导致无法继续开发，你都应对用户毫无保留。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">无论你为何关闭产品，你都应当为产品和这个决定负起全部责任。千万不要让用户有负罪感。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<br />
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<img src="http://img0.tech2ipo.com/upload/img/article/2014/10/1412665945414.jpg" title="6" /> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">Slice 公司告诉用户，他们关闭 Bookshelf 服务，是为了能够专注于其他产品发展。虽然对用户来说这不是天大的好消息，但至少他们做到了诚实。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">图中为 2014.02.28，Slice 公司发出的关闭 Bookshelf 服务的通知。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">告诉用户他们将受到什么影响</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">用户已经知道了关闭原因和时间，现在要说的是，这对他们会有什么影响。他们会不会丢失数据，有没有其他选择，比如数据备份、导出？如果你无法打理好一切，那么需要他们做什么？如果是收费服务，接下来的收费方式是什么？</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<img src="http://img0.tech2ipo.com/upload/img/article/2014/10/1412665946552.jpg" title="7" width="642" height="443" border="0" style="width:642px;height:443px;" /> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">EverPic 把所有的商业数据都放到了 Github 上。图片是 Everpix 在 Github 网站上放的所有内容的截图。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<img src="http://img0.tech2ipo.com/upload/img/article/2014/10/1412665948771.jpg" title="8" width="642" height="469" border="0" style="width:642px;height:469px;" /> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">Outbox 则是为关闭事宜专门撰写了一份常见问题指南。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">图中是标题为「Outbox 关闭服务的用户常见问题」的网页截图。（其中包含处理所有邮件和下载附件的步骤）</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">解释关闭产品对于公司本身的意义</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">如果你之前都表现得足够坦诚，那么用户一定能给予他们的理解和同情。所以，你完全可以让他们了解公司的实际情况。这些人对你的产品，公司表示过支持，所以他们有权知道关闭产品对公司的影响。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">只是关闭产品而已，还是连同公司一起关闭？或者说，关闭产品是因为公司被收购了？你个人在产品关闭后会去做什么，有什么未竟的人生理想？与用户交流这些，会拉近你们之间的距离，让他们感受到你们作为普通人的情感，不再只留下冷冰冰的一个公司名字。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">比如 Verelo（致力于为网站健康状况作诊断），他们告诉用户公司和员工的实际情况：</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">「几个月前，在 Mike 最终决定离开公司的时候，我为他送上最好的祝福，同时自己默默坚持。这一次很多重要的伙伴也离开了，包括 Vanessa，她会回到她钟爱的珠宝设计事业上。」</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">致谢</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">最后一步，感谢用户。无论你的用户数量大小，他们都支持了你当初的雄心壮志，和你一同走过了这段旅程，他们是你整个过程中的动力来源。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">以下是 Findlt 的创始人写的致谢词：</span> 
+</p>
+<blockquote style="vertical-align:baseline;font-size:14px;background-color:#F1F1F1;color:#878787;font-family:Arial, Helvetica, sans-serif;">
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">在此送上 FindIt 团队的最诚挚的祝福，希望你在以后的人生中，每一次的寻找都有所收获。</span> 
+	</p>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">创始人 Levi，Alex，Ben 和 Brandon 的话</span> 
+	</p>
+</blockquote>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">如果你想在致谢后附名，是以你自己的名义还是以公司的名义，要根据产品和用户的关系来决定。你们希望用户仅仅把你们看做一个产品，还是一个想要青史留名的团队？</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">语气</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">关闭产品是个严肃的决定。就相当于承认你已经无力完成原先许下的承诺，你和用户的关系也到此为止。所以，措辞要正式而有礼貌，这不是闹着玩的。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">但你可以保持开放和乐观的心态，在承认错误的同时，也要肯定自己的成绩。为了这个产品，你曾经废寝忘食，不眠不休，所以你可以理直气壮地说出来，关闭产品对你而言也同样艰难，因为你和他们一样深爱着这个产品。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">Readmill 的告别信读来令人感同身受：</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">你读到这里的时候，Readmill 的故事已经结束了。这世界上还有许多关于电子书的问题等待解决，我们最终还是未能创造一个持久的阅读平台，对此我们致以最深的歉意。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<img src="http://img0.tech2ipo.com/upload/img/article/2014/10/1412665950084.jpg" title="9" width="642" height="404" border="0" style="width:642px;height:404px;" /> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">在 Wibiya（网络应用出版和发行公司）的告别页面上，他们推荐用户使用公司的其他产品。</span> 
+</p>
+<blockquote style="vertical-align:baseline;font-size:14px;background-color:#F1F1F1;color:#878787;font-family:Arial, Helvetica, sans-serif;">
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">图中文字：</span> 
+	</p>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">Wibiya 已经留下了属于它的精彩。</span> 
+	</p>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">Conduit（应用开发商，wibiya 被它收购）希望与您共享更多好时光。</span> 
+	</p>
+	<p style="vertical-align:baseline;font-size:14px;color:#666666;">
+		<span style="font-size:16px;">您可以尝试 www.conduit.com 上的更多优秀产品。</span> 
+	</p>
+</blockquote>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<strong><span style="font-size:16px;background-color:#337FE5;">个中不易，心照不宣</span></strong> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">如果你觉得这一切有些沉重，有些繁琐，因为这本就不是件轻松的事。毫无疑问，决定是否要关闭你的产品，可能会用去数周甚至数月的时间。但你的用户值得同等的用心和关注。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">这个任务看似简单，其实不然。你必须和他们坦诚相对，你可能会得到一些支持，但也许更多的是愤怒或者伤感。甚至有些人会觉得你辜负了他们的指望，但他们有权这么认为。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">很多时候，这项举措是徒劳无功的，但你要记得，无论什么时候，只要你真心对待用户，你就能让他们高兴。直到最后一刻，你也要保持优雅，虽然你这次失败了，但在他们心中，你依然不卑不亢，诚心实意，所以如果有下回，你还是他们乐于合作的对象。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">换上全新的面貌，准备东山再起。一切才刚刚开始！</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">分享时间</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">你是否曾经关闭过一款产品，甚至一个公司？如果有，现在回想的时候，你最希望那时的自己明白的是什么？</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">其他参考资料</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">1. TechCrunch 的《倒闭创业公司名录》</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">包含了很多倒闭了的或者关闭过产品的创业公司的名人轶事。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">2.&nbsp;《周四晚上，关闭你的创业公司》，作者 Lucas Rayala，来自 TechCrunch（领先的科技媒体, 致力于记录初创科技公司, 点评新上市互联网产品, 报道突发科技新闻。）</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">这是关闭产品的情感方面的一份亲密档案。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">3.&nbsp;《关闭来临时》——Chris Dixon</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">Dixon 谈及关闭产品或者创业公司并不意味着一切到此为止。</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">4.&nbsp;《如何关闭创业公司》，作者 Nellie Akalp，来自 Mashable（互联网新闻博客）</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	<span style="font-size:16px;">简短的指南：给那些不止打算关闭产品，还打算关闭公司的人</span> 
+</p>
+<p style="vertical-align:baseline;font-size:14px;color:#333333;font-family:Arial, Helvetica, sans-serif;background-color:#FFFFFF;">
+	---------------------------------------------<br />
+<span style="color:#E56600;">点击分享键，把此文分享给想要创业的朋友。</span><br />
+<span style="color:#E56600;">读者分享“创业经验”，投稿邮箱：lightta@linevi.com。</span> 
+</p>
+      </div>
+      <div style="height:30px;"></div>
+      
+      <form class="form-horizontal" role="form" name="commentForm" id="commentForm">
+       <input type="hidden" class="form-control" id="eventId" placeholder="eventId" name="eventId" value="df919728-6aee-4423-87f0-930a8ba543ec">
+        <div class="col-xs-12" style="border-top:1px solid #e8410d;"></div>
+        <div style="height:20px;"></div>
+        <div class="form-group">
+          <label class="col-xs-2" for="formGroupInputDefault">
+            <img src="/img/defaultChatHead.png" alt="" class="img-rounded" style="width:100%">
+          </label>
+          <div class="col-xs-10">
+            <textarea class="form-control" rows="3" placeholder="有何感想？" id="content" name="content"></textarea><br>
+            <button type="button" class="btn btn-block btn-danger" onclick="publishComment()">评论</button>
+          </div>
+        </div>
+      </form>
+      <!--begin 评论-->
+      <div id="comment">	      
+      </div>
+      <!--end 评论-->
+    <div style="height:10px;"></div>
+    <div style="width:100%;text-align:center;">
+      <div class="pagination pagination-danger">
+       <button type="button" class="btn btn-block btn-danger" onClick="turnPage('next')">加载更多评论</button>
+      </div>
+    </div>
+	
+	<div class="well">
+    <p>在关注创业信息？想找人才，找创业项目，交流创业经验？想获悉更多最新的线下交流活动？聚光塔创业社交应用，帮助创业者克服创业过程中的困难~</p>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaAndroidApp()">
+            下载android客户端
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaIphoneApp()">
+            下载iOS客户端
+          </a>
+        </div>
+      </div>
+    </div>
+	
+	<div class="well">
+      <div class="row">
+        <div class="co-xs-2">分享到：</div>
+        <div class="co-xs-8">
+          <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+        </div>
+      </div>
+    </div>
+	
+  </div>
+ 
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">广州联维物联网科技有限公司 版权所有</p>
+      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+    </div>
+  </footer>
+  
+      <!-- begin 登录层 -->
+      <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
+		      </div>
+		      <div class="modal-body">
+		          <form class="form-signin" role="form" action="/user!login.action" method="post">
+			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
+			        <br>
+			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
+			         <br>
+			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">忘记密码</button>
+		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+      <!-- end 登录层 -->
+      <footer class="footer">
+	    <div class="container">
+	      <p class="text-muted">广州联维物联网科技有限公司 版权所有 |<a href="/about.html">关于我们</a></p>
+	      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+	    </div>
+	  </footer>	  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://cdn.zenkr.com/bootstrap/3/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/flat-ui.min.js"></script>
+    <script src="/js/application.js"></script>
+    
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/lighttaCommon.js"></script>
+    
+    <script type="text/javascript">
+	$(document).ready(function(){
+	  $("img").addClass("img-responsive");
+	  //加载评论
+	  getComment(1);
+	});
+	
+	//加载评论
+	var pageIndex = 1;//第几页
+	function getComment(pageIndex){	
+	    $.ajax({
+	        type: "post", 
+	        url: "/comment!getComment.action?eventId=df919728-6aee-4423-87f0-930a8ba543ec&pageIndex="+pageIndex,
+	        data: {pageCount:10,pageIndex:pageIndex},
+	        dataType: "json",
+	        success: function(data){
+	       	         var list = data.list;
+	       	         var total = data.total;
+	       	         var totalPage = data.totalPage;
+	       	         pageIndex = data.pageIndex;
+	       	         $("#total").text("共"+total+"条");
+	       	         $("#totalPage").text("共"+totalPage+"页");
+	       	         $("#pageIndex").text("第"+pageIndex+"页");
+	       	         if(pageIndex==1){//如果是第一页，则上一页不能点
+	       	        	$("#previousPage").addClass("disabled"); 
+	
+	       	         }else{
+	       	        	 $("#previousPage").removeClass("disabled"); 
+	       	         }
+	       	         if(pageIndex==totalPage){//如果是最后，则下一页不能点
+	     	        	$("#nextPage").addClass("disabled"); 
+	     	        	$("#nextPage").removeAttr("onclick");
+	     	         }else{
+	     	        	$("#nextPage").removeClass("disabled"); 
+	     	         }
+	          	     //$('#commentList').empty();
+	                 $.each(list,function(idx,item){                       	   
+	                   	   var trHTML = "<div class='media'>"+
+											"<a class='media-left' href='#'>"+
+											  "<img src='"+item.chatHead+"' style='max-width:80px;max-height:80px;'>"+
+											"</a>"+
+											"<div class='media-body'>"+
+											  "<h4 class='media-heading'>"+item.userName+" <small>"+item.commentTime+"</small></h4>"+
+											     item.content
+											"</div>"+
+										"</div>";
+	                       $("#comment").append(trHTML);//在table最后面添加一行
+	                   	})
+	         }
+	    });
+	}
+	
+	//翻页
+	function turnPage(turning){
+		if(turning=="next"){
+			pageIndex = pageIndex + 1;
+			getComment(pageIndex);
+		}
+		if(turning=="pre"){
+			pageIndex = pageIndex - 1;
+			getComment(pageIndex);
+		}
+		
+	}
+	
+    </script>
+  </body>
+</html>

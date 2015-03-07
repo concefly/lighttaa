@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>LightTa</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/flat-ui.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
+      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+
+  <!--begin 一级菜单-->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	          </button>
+	          <a class="navbar-brand" href="/">聚光塔</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li><a href="/">首页 </a></li>
+	            <li class="active"><a href="/html/project/list/1/1.html">项目</a></li>
+	            <li><a href="/html/partner/list/1.html">人才</a></li>
+	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
+	            <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
+	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
+	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
+	              </ul>
+	            </li>
+	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
+	            <li><a href="/about.html" target="_blank">关于我们</a></li>      
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right" id="welcome">
+	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
+	            <li><a href="#" onclick="showLogin()">登录</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
+  <!--end 一级菜单-->
+  <div class="container">
+    <div style="height:60px;"></div>
+    <div class="row">
+      <div class="col-xs-9">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="我想要知道..." id="keyWord">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="search()">搜索</button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+      <div class="col-xs-2">
+        <button type="button" class="btn btn-danger" onclick="createMyProject()" style="float:left">创建我的项目</button>
+      </div>
+    </div>
+    <div style="height:30px;"></div>
+    <!--begin list-->
+    <div id="list">
+     	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/project/content/beb4287b-0ac1-4b9f-b310-a4840d4b421d.html' target="_blank">校园电商网站</a>
+	            <small>负责人：陈献新</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/project/content/beb4287b-0ac1-4b9f-b310-a4840d4b421d.html' target="_blank">
+	            <img src="/img/project/default.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：B2C电商</p>
+	        <p>介绍：专为高校师生提供生活最需要的，精选的商品，所有商品自营，经过精心挑选，为师生提供有品质，最具性价比的商品，力争成为电商中的屈臣氏</p>
+	        <p>所需资源：专为高校师生提供生活最需要的，精选的商品，所有商品自营，经过精心挑选，为师生提供有品质，最具性价比的商品，力争成为电商中的屈臣氏</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/project/content/d93cf49e-a418-41fd-b999-52760ede6364.html' target="_blank">扬格艺术餐具电商创业平台</a>
+	            <small>负责人：江小龙</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/project/content/d93cf49e-a418-41fd-b999-52760ede6364.html' target="_blank">
+	            <img src="/img/project/1417511725807.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：电商</p>
+	        <p>介绍：本人正组建一电商项目团队，主要负责企业电子商务模块搭建，具体包括网络营销团队建设、推广、SEO优化等。现急需一名电子商务专业同学，如果您有勇有谋，请加入我们。我们将提供让您独当一面、施展才华、内部创业的机会。
+    要求：计算机专业或电子商务专业，熟悉网站设计和电商运作；
+    工作时间：周一到周五，每天工作八小时
+    待遇：基本工资+绩效工资+绩效奖励（很高）；
+    工作地点：广州市天河区地铁三号线夏滘B出口；
+    联系人：江小龙，15602241282；
+    简历请发至：1033296953@qq.com--</p>
+	        <p>所需资源：能人志士</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/project/content/1f057e69-781e-4bb1-afd5-39d237e0434d.html' target="_blank">Go2Buy</a>
+	            <small>负责人：余培鹏，郑国华</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/project/content/1f057e69-781e-4bb1-afd5-39d237e0434d.html' target="_blank">
+	            <img src="/img/project/default.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：电子商务</p>
+	        <p>介绍：O2O购机预约平台。移动端预约，实体店验货，让每个用户能用低于网购价格，享受实体店的服务。</p>
+	        <p>所需资源：</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/project/content/768e6726-cc07-41f7-a8b0-e6bf7caa2608.html' target="_blank">虚拟职场招聘网</a>
+	            <small>负责人：黄子健</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/project/content/768e6726-cc07-41f7-a8b0-e6bf7caa2608.html' target="_blank">
+	            <img src="/img/project/1414666788230.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：互联网</p>
+	        <p>介绍：以游戏的形式，通过虚拟职场环境和工作流程，让求职者在找工作之前就体验工作践，制定科学的职业规划，找到最合适自己的工作,同时也可以帮助企业进行品牌推广。项目已有完整创业计划书，有兴趣一起创业和投资的可以加微信18617357780</p>
+	        <p>所需资源：合伙人、资金</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/project/content/7e24d5c2-f691-4178-bf2d-3650ed9d376d.html' target="_blank">猎职猫</a>
+	            <small>负责人：陆明</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/project/content/7e24d5c2-f691-4178-bf2d-3650ed9d376d.html' target="_blank">
+	            <img src="/img/project/1410487597633.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：移动互联网</p>
+	        <p>介绍：手机应用，通过网络爬取招聘信息，汇聚在APP内；用户登录之后，可以输入其需求的职位的特征：如领域、薪酬、工作时间。平台自动帮其做数据匹配。把匹配度最高的招聘信息推荐给用户。</p>
+	        <p>所需资源：资金投入</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/project/content/d2d6f61d-61e8-4559-8ed6-6e41289aabcd.html' target="_blank">校园水果配送</a>
+	            <small>负责人：梁子祎</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/project/content/d2d6f61d-61e8-4559-8ed6-6e41289aabcd.html' target="_blank">
+	            <img src="/img/project/1407573191880.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：</p>
+	        <p>介绍：在各高校校园中，做专注于水果配送的电商平台。类似“水果版”的饿了么。同时需要APP、网站的开发</p>
+	        <p>所需资源：</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/project/content/d6ccf908-4b41-4111-b473-8db07dc9a719.html' target="_blank">车车网</a>
+	            <small>负责人：黄觉</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/project/content/d6ccf908-4b41-4111-b473-8db07dc9a719.html' target="_blank">
+	            <img src="/img/project/1414404709786.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：汽车服务移动互联网</p>
+	        <p>介绍：成为青年一代最好的学车、租车、买车等一系列的个人汽车服务的O2O平台，融入团购和社交元素让“车”变得更好玩更实惠；前期主推学车和租车业务，以高校（学生市场集中，学车比例高，可降低推广难度）作为市场切入口；之后顺势进入白领市场，完善业务体系，形成社交和商城相结合的服务生态圈。</p>
+	        <p>所需资源：资金、技术人才</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/project/content/e3b4b727-64c9-4bc5-b6c9-078ed09d9eaa.html' target="_blank">网络通讯推广系统电话，商家的好帮手！</a>
+	            <small>负责人：李煌</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/project/content/e3b4b727-64c9-4bc5-b6c9-078ed09d9eaa.html' target="_blank">
+	            <img src="/img/project/default.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：通信科技</p>
+	        <p>介绍：团队自己组建研发的网络电话，利用数据流量或者wifi环境下，实现手机上用软件对手机或者固话进行通话！我们团队的网络电话能实现高清晰度无延时通话，通话成本只需要3分钱每分钟。对于打电话多的用户觉得是能省下一大笔话费。同时，100话费卡只要10来块钱成本，买一百送一百话费，是作为商家促销活动的推广神器，买一百送一百话费的推广。软件设计为广告版本，能根据商家需求添加广告，集合网上商城的模式，商家广告商只需低价就能打造自己的软件</p>
+	        <p>所需资源：需求合作商家</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/project/content/e83e2b00-7ee0-41c2-bba6-83c607d8e6f8.html' target="_blank">运动手表</a>
+	            <small>负责人：楚泽</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/project/content/e83e2b00-7ee0-41c2-bba6-83c607d8e6f8.html' target="_blank">
+	            <img src="/img/project/1407573377665.jpg" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：</p>
+	        <p>介绍：基于社交功能的运动手表；促进80、90后情感交流。可以看到附近的人的运动发布。也可以邀请别人参与到自己的运动计划中来。</p>
+	        <p>所需资源：</p>
+	      </div>
+	    </div>
+	    <div class="row pjt-list">
+	      <div class="col-xs-9 col-xs-offset-3">
+	        <h4><a  href='/html/project/content/97bbde68-3436-4fbf-948e-1a77b3e045e7.html' target="_blank">模特街</a>
+	            <small>负责人：霸王刀</small>
+	        </h4>
+	      </div>
+	      <div class="col-xs-3">
+	        <a  href='/html/project/content/97bbde68-3436-4fbf-948e-1a77b3e045e7.html' target="_blank">
+	            <img src="/img/project/1414667116826.png" class="img-rounded" style="width:80%;">
+	        </a>
+	      </div>
+	      <div class="col-xs-9">
+	        <p>领域：互联网文化传媒</p>
+	        <p>介绍：模特街是一个模特供求信息平台，平台对模特的供需信息进行认真，保证信息的真实性；模特通过图文、语音、视频进行自我展示，完善的评价体系让信息更可靠，O2O模式让模特为你私人订制</p>
+	        <p>所需资源：资金、技术、渠道</p>
+	      </div>
+	    </div>
+    </div>
+    <!--end list-->
+    <!--begin 翻页-->
+    <div style="width:100%;text-align:center;">
+      <div class="pagination pagination-danger">
+
+       <a href="/html/project/list/1/2.html" class="btn btn-danger previous" id="prePage">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+       <a href="#" onclick="turnPage('pre')" class="btn btn-danger previous" id="searchPrePage" style="display:none">
+          <i class="fui-arrow-left"></i>上一页
+        </a>
+        <ul>
+          <li><a id="total">共36条</a ><a id="totalPage">共4页</a ><a id="pageIndex">第3页</a ></li>
+        </ul>
+
+        <a href="/html/project/list/1/4.html" class="btn btn-danger next" id="nextPage">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+        <a href="#" onclick="turnPage('next')" class="btn btn-danger next" id="searchNextPage" style="display:none">下一页
+          <i class="fui-arrow-right"></i>
+        </a>
+
+      </div>
+    </div>
+    <!--begin 翻页-->
+    
+    <div class="well well-lg">
+    <p>在关注创业信息？想找人才，找创业项目，交流创业经验？想获悉更多最新的线下交流活动？聚光塔创业社交应用，帮助创业者克服创业过程中的困难~</p>
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaAndroidApp()">
+            下载android客户端
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaIphoneApp()">
+            下载iOS客户端
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- begin 登录层 -->
+      <!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
+		      </div>
+		      <div class="modal-body">
+		          <form class="form-signin" role="form" action="/user!login.action" method="post">
+			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
+			        <br>
+			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
+			         <br>
+			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" onClick="forgetPassword()">忘记密码</button>
+		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+      <!-- end 登录层 -->
+      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+      <footer class="footer">
+	    <div class="container">
+	      <p class="text-muted">广州联维物联网科技有限公司 版权所有 |<a href="/about.html">关于我们</a></p>
+	      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+	    </div>
+	  </footer>
+	  
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://cdn.zenkr.com/bootstrap/3/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/flat-ui.min.js"></script>
+    <script src="/js/application.js"></script>
+    
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/lighttaCommon.js"></script>
+    <script>
+    $(function(){ 
+	    //回车事件
+	    document.onkeydown = function(e){ 
+	        var ev = document.all ? window.event : e;
+	        if(ev.keyCode==13) {
+	        	search();
+	         }
+	    }
+	});
+
+    //获取数据
+	var pageIndex = 1;//第几页
+	function getData(pageIndex){
+		var keyWord = $("#keyWord").val()
+		var approvalState = "已通过";
+	    $.ajax({
+	        type: "post", 
+	        url: "/project!getProjectsList.action",
+	        data: {pageCount:10,pageIndex:pageIndex,keyWord:keyWord,approvalState:approvalState},
+	        dataType: "json",
+	        success: function(data){
+	       	         var list = data.list;
+	       	         var total = data.total;
+	       	         var totalPage = data.totalPage;
+	       	         pageIndex = data.pageIndex;
+	       	         $("#total").text("共"+total+"条");
+	       	         $("#totalPage").text("共"+totalPage+"页");
+	       	         $("#pageIndex").text("第"+pageIndex+"页");
+	       	         $("#searchPrePage").show();
+	                 $("#searchNextPage").show();
+	                 $("#prePage").hide();
+	                 $("#nextPage").hide();                   
+	       	         if(pageIndex==1){//如果是第一页，则上一页不能点
+	       	        	$("#searchPrePage").hide();
+	       	         }else{
+	       	        	$("#searchPrePage").show();
+	       	         }
+	       	         if(pageIndex==totalPage){//如果是最后，则下一页不能点
+	     	        	$("#searchNextPage").hide();
+	     	         }else{
+	     	        	$("#searchNextPage").show();
+	     	         }
+	          	     $('#list').empty();
+	                 $.each(list,function(idx,item){     
+	                   	   var str =  "<div class='row pjt-list'>"+
+										  "<div class='col-xs-9 col-xs-offset-3'>"+
+											"<h4><a  href='"+item.url+"' target='_blank'>"+item.projectName+"</a>"+
+												"<small>负责人："+item.teamLeader+"</small>"+
+											"</h4>"+
+										  "</div>"+
+										  "<div class='col-xs-3'>"+
+											"<a  href='"+item.url+"' target='_blank'>"+
+												"<img src='"+item.pic+"' class='img-rounded' style='width:80%;'>"+
+											"</a>"+
+										  "</div>"+
+										  "<div class='col-xs-9'>"+
+											"<p>领域："+item.field+"</p>"+
+											"<p>介绍："+item.projectIntroduce+"</p>"+
+											"<p>所需资源："+item.requiredResource+"</p>"+
+										  "</div>"+
+										"</div>";
+	                   	   $("#list").append(str); 
+	                   	})
+	         }
+	    });
+	}
+	//翻页
+	function turnPage(turning){
+		if(turning=="next"){
+			pageIndex = pageIndex + 1;
+			getData(pageIndex);
+		}
+		if(turning=="pre"){
+			pageIndex = pageIndex - 1;
+			getData(pageIndex);
+		}
+		
+	}
+	//搜索
+	function search(){
+		getData(pageIndex);
+	}
+    </script>
+  </body>
+</html>
