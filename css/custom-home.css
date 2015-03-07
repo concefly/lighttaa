@@ -9,7 +9,7 @@
 	background-image: url(../img/home/silder_bg1.jpg);
 }
 #featured .jumbotron .slides img {
-	height: 520px; /*固定slider高度*/
+	/*height: 520px;*/
 	width: auto;
 	margin: 0 auto 0 auto; /*图片水平居中*/
 }
