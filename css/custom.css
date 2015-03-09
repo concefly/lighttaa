@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', Arial, sans-serif, "iconfont" !important;
+  font-family: "iconfont" ,'Open Sans',  Arial, sans-serif ;
   background-color: #fafafa;
 }
 .media-heading {
@@ -212,4 +212,20 @@ footer {
 .paging {
     text-align: center;
     width: 100%;
+}
+
+.partner-field:before {
+    content: "\e607    领域：    ";
+}
+
+.partner-skill:before {
+    content: "\e607    个人技能：    ";
+}
+
+.partner-exp:before {
+    content: "创业经历：    ";
+}
+
+.partner-title:before {
+    content: "\e601";
 }
