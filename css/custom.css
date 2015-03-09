@@ -208,3 +208,8 @@ footer {
 .project-need:before {
     content: "\e607  ";
 }
+
+.paging {
+    text-align: center;
+    width: 100%;
+}
