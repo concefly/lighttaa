@@ -239,3 +239,29 @@ footer {
     color: #053e60;
     text-decoration: underline;
 }
+
+.project-schedule:before {
+    content: "进度：    ";
+}
+
+table[class~=project-page] {
+    vertical-align:middle;
+}
+
+table[class~=project-page] tr td {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+table[class~=project-page] tr td:first-of-type {
+    width: 15%;
+    text-align: center;
+    color: #e8420d;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+table[class~=project-page] tr td:nth-child(2) p {
+    border-left: 2px solid #f39375;
+    padding-left: 1em;
+}
