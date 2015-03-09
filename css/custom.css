@@ -229,3 +229,13 @@ footer {
 .partner-title:before {
     content: "\e601";
 }
+
+.project-title a {
+    color: #106394;
+}
+
+.project-title a:hover,
+.project-title a:focus {
+    color: #053e60;
+    text-decoration: underline;
+}
