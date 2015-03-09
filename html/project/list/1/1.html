@@ -1,434 +1,158 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Cache-Control" content="no-transform">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="./favicon.ico">
 
-    <title>LightTa</title>
+    <title>聚光塔</title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/flat-ui.min.css" rel="stylesheet">
-    <link href="/css/custom.css" rel="stylesheet">
+    <!-- <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap-theme.min.css" rel="stylesheet"> -->
+    <link href="../../../../css/flat-ui.min.css" rel="stylesheet">
+    <link href="../../../../css/custom.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../../../js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../../../js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
-      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="./css/carousel.css" rel="stylesheet"> -->
+
+    <!-- ico & fonts-->
+    <link rel="stylesheet" href="../../../../css/alifont.css">
+    <link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext">
+
+    <!-- home page style -->
+    <link rel="stylesheet" href="./css/custom-home.css">
+
+    <!-- extra js -->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="../../../../js/jquery.cookie.js"></script>
+    <script src="../../../../js/lighttaCommon.js"></script>
+    <script src="../../../../js/bootstrap-function.js"></script>
+
+    <!-- flexslider -->
+    <link rel="stylesheet" href="../../../../css/flexslider.css">
+    <script src="../../../../js/jquery.flexslider-min.js"></script>
   </head>
 
   <body>
 
-  <!--begin 一级菜单-->
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-	      <div class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	            <span class="sr-only">Toggle navigation</span>
-	          </button>
-	          <a class="navbar-brand" href="/">聚光塔</a>
-	        </div>
-	        <div class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav">
-	            <li><a href="/">首页 </a></li>
-	            <li class="active"><a href="/html/project/list/1/1.html">项目</a></li>
-	            <li><a href="/html/partner/list/1.html">人才</a></li>
-	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
-	            <li class="dropdown">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
-	              <ul class="dropdown-menu">
-	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
-	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
-	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
-	              </ul>
-	            </li>
-	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
-	            <li><a href="/about.html" target="_blank">关于我们</a></li>      
-	          </ul>
-	          <ul class="nav navbar-nav navbar-right" id="welcome">
-	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
-	            <li><a href="#" onclick="showLogin()">登录</a></li>
-	          </ul>
-	        </div><!--/.nav-collapse -->
-	      </div>
-	    </div>
-  <!--end 一级菜单-->
-  <div class="container">
-    <div style="height:60px;"></div>
-    <div class="row">
-      <div class="col-xs-9">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="我想要知道..." id="keyWord">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button" onclick="search()">搜索</button>
-          </span>
-        </div><!-- /input-group -->
-      </div>
-      <div class="col-xs-2">
-        <button type="button" class="btn btn-danger" onclick="createMyProject()" style="float:left">创建我的项目</button>
-      </div>
-    </div>
-    <div style="height:30px;"></div>
-    <!--begin list-->
-    <div id="list">
-     	    <div class="row pjt-list">
-	      <div class="col-xs-9 col-xs-offset-3">
-	        <h4><a  href='/html/project/content/1ce232d9-3d68-44f0-9f49-2c66b5af7787.html' target="_blank">儿童美术图片投票分享网页</a>
-	            <small>负责人：BetaApple</small>
-	        </h4>
-	      </div>
-	      <div class="col-xs-3">
-	        <a  href='/html/project/content/1ce232d9-3d68-44f0-9f49-2c66b5af7787.html' target="_blank">
-	            <img src="/img/project/1425552895915.png" class="img-rounded" style="width:80%;">
-	        </a>
-	      </div>
-	      <div class="col-xs-9">
-	        <p>领域：互联网，网页应用</p>
-	        <p>介绍：一个儿童美术图片分享投票的网站/轻应用？或什么。这个是全国各地数百万少儿美术班，少年宫，儿童童画培训中心切实需要的。这是一个小项目，需要一个技术全面的合伙人就可以完成，也许只需要3个工作日即可完成。后期每周1个小时维护。但确实是可以轻松实现百万级流量的项目。前期市场调研都已完成，UI也已经完成。是一个从传统稳定行业派生出来的互联网需求，从一开始就是赚钱的。而且未来还可以扩展，成为细分垂直行业网站。</p>
-	        <p>所需资源：</p>
-	      </div>
-	    </div>
-	    <div class="row pjt-list">
-	      <div class="col-xs-9 col-xs-offset-3">
-	        <h4><a  href='/html/project/content/649b840c-e447-4755-9e63-f9c59de9827b.html' target="_blank">生态文化农业体系</a>
-	            <small>负责人：丘宗凡</small>
-	        </h4>
-	      </div>
-	      <div class="col-xs-3">
-	        <a  href='/html/project/content/649b840c-e447-4755-9e63-f9c59de9827b.html' target="_blank">
-	            <img src="/img/project/1425486416162.png" class="img-rounded" style="width:80%;">
-	        </a>
-	      </div>
-	      <div class="col-xs-9">
-	        <p>领域：农业</p>
-	        <p>介绍：打造文化、农业生产相结合的现代化生态农业体系，以生产农产品为主，发展农业文化为辅，集中零散小农经济，为广大小农经济服务创造经济效益.</p>
-	        <p>所需资源：农业相关技术人才</p>
-	      </div>
-	    </div>
-	    <div class="row pjt-list">
-	      <div class="col-xs-9 col-xs-offset-3">
-	        <h4><a  href='/html/project/content/eef31859-1b5f-4305-bbd6-28a1ed51de0d.html' target="_blank">芥纳金融</a>
-	            <small>负责人：张华彬</small>
-	        </h4>
-	      </div>
-	      <div class="col-xs-3">
-	        <a  href='/html/project/content/eef31859-1b5f-4305-bbd6-28a1ed51de0d.html' target="_blank">
-	            <img src="/img/project/default.png" class="img-rounded" style="width:80%;">
-	        </a>
-	      </div>
-	      <div class="col-xs-9">
-	        <p>领域：天使投资   股权众筹</p>
-	        <p>介绍：芥纳金融本着服务创业者的宗旨，以股权众筹为切入点，打造“找钱、管钱、挣钱”的创业生态圈，助力小微企业从“输血”到自我“造血”的转变，从而健康成长！</p>
-	        <p>所需资源：</p>
-	      </div>
-	    </div>
-	    <div class="row pjt-list">
-	      <div class="col-xs-9 col-xs-offset-3">
-	        <h4><a  href='/html/project/content/6df28542-d559-4afc-83f9-591b202902bb.html' target="_blank">Hey!饮茶星点心快餐</a>
-	            <small>负责人：谢汉贤</small>
-	        </h4>
-	      </div>
-	      <div class="col-xs-3">
-	        <a  href='/html/project/content/6df28542-d559-4afc-83f9-591b202902bb.html' target="_blank">
-	            <img src="/img/project/1424190206692.png" class="img-rounded" style="width:80%;">
-	        </a>
-	      </div>
-	      <div class="col-xs-9">
-	        <p>领域：百姓创业家</p>
-	        <p>介绍：广东人平常都喜欢一盅两件叹茶，但我个人认为目前的茶居设计不太吸引年轻人，而且点心也没什么新意，我想设计一个动漫角色来做餐饮招牌，重新改良过中式点心以本土新奇文化作为卖点令新一代喜欢吃点心。</p>
-	        <p>所需资源：场地、相关设备</p>
-	      </div>
-	    </div>
-	    <div class="row pjt-list">
-	      <div class="col-xs-9 col-xs-offset-3">
-	        <h4><a  href='/html/project/content/5d4b7c8d-0a91-477f-91a8-b99945cecb7f.html' target="_blank">聚光塔</a>
-	            <small>负责人：梁坤</small>
-	        </h4>
-	      </div>
-	      <div class="col-xs-3">
-	        <a  href='/html/project/content/5d4b7c8d-0a91-477f-91a8-b99945cecb7f.html' target="_blank">
-	            <img src="/img/project/default.png" class="img-rounded" style="width:80%;">
-	        </a>
-	      </div>
-	      <div class="col-xs-9">
-	        <p>领域：互联网、物联网</p>
-	        <p>介绍：聚光塔帮助中小企业及初创团队寻找人才及业务推广；同时根据高校进行区分，辅助人才找到合适的工作企业或创业团队。</p>
-	        <p>所需资源：在招第二大股东，负责市场。要求:能力强，心态好，团结队友，有一定市场经验及渠道。</p>
-	      </div>
-	    </div>
-	    <div class="row pjt-list">
-	      <div class="col-xs-9 col-xs-offset-3">
-	        <h4><a  href='/html/project/content/d71dde24-efbe-4dab-911a-9aaaba7c7dbc.html' target="_blank">香港gogo购•身边的代购平台</a>
-	            <small>负责人：张来健，邓婉妍</small>
-	        </h4>
-	      </div>
-	      <div class="col-xs-3">
-	        <a  href='/html/project/content/d71dde24-efbe-4dab-911a-9aaaba7c7dbc.html' target="_blank">
-	            <img src="/img/project/default.png" class="img-rounded" style="width:80%;">
-	        </a>
-	      </div>
-	      <div class="col-xs-9">
-	        <p>领域：互联网购物平台</p>
-	        <p>介绍：咱们的团队成员都是华南理工大学的在校大三学生，打造这个香港代购平台就是我们的创业小想法，希望能给普通的顾客以及校园里的小型代购带来最大的购物便利。
+    <header>
+      <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">LightTA</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="./html/project/list/1/1.html">项目</a></li>
+              <li><a href="./html/partner/list/1.html">人才</a></li>
+              <li><a href="./html/outsourcing/list/1.html">业务共享</a></li>
+              <li class="dropdown">
+                <a href="./html/cyxt/cyxt/list/1.html" class="dropdown-toggle" disabled>创业学堂 <span class="iconfont icon-xiala"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./html/cyxt/xxhd/list/1.html">线下活动</a></li>
+                  <li><a href="./html/cyxt/zxzc/list/1.html">最新政策</a></li>
+                </ul>
+              </li>
+              <li><a href="./about.html">关于</a></li>
+              <form class="navbar-form navbar-left" action="/user!login.action" method="post">
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" placeholder="登录邮箱" style="width:150px">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="pwd" class="form-control" placeholder="密码" style="width:150px">
+                </div>
+                <button type="submit" class="btn btn-transfer">登录</button>
+              </form>
+              <li>
+                <button type="button" class="btn btn-info navbar-btn" style="border: 1px solid;">体验一下</button>
+              </li>
 
-前两次香港购物的下单均意外超过40000RMB，消费市场尚在进一步开拓上。
-（微信订阅号：香港gogo购）</p>
-	        <p>所需资源：团队，资金</p>
-	      </div>
-	    </div>
-	    <div class="row pjt-list">
-	      <div class="col-xs-9 col-xs-offset-3">
-	        <h4><a  href='/html/project/content/502c3daf-5e6c-4d46-bf2f-9f1d4e34c9a6.html' target="_blank">设计师垂直社交与交易</a>
-	            <small>负责人：张清</small>
-	        </h4>
-	      </div>
-	      <div class="col-xs-3">
-	        <a  href='/html/project/content/502c3daf-5e6c-4d46-bf2f-9f1d4e34c9a6.html' target="_blank">
-	            <img src="/img/project/default.png" class="img-rounded" style="width:80%;">
-	        </a>
-	      </div>
-	      <div class="col-xs-9">
-	        <p>领域：艺术类，社交类，电商类</p>
-	        <p>介绍：解决中国1700万职业设计师深入交流与合作</p>
-	        <p>所需资源：2名python后台+1名iOS前端</p>
-	      </div>
-	    </div>
-	    <div class="row pjt-list">
-	      <div class="col-xs-9 col-xs-offset-3">
-	        <h4><a  href='/html/project/content/e252a441-c45a-4fc3-b0f4-ec0c361d564c.html' target="_blank">奢侈小商品跨境电商</a>
-	            <small>负责人：徐晓</small>
-	        </h4>
-	      </div>
-	      <div class="col-xs-3">
-	        <a  href='/html/project/content/e252a441-c45a-4fc3-b0f4-ec0c361d564c.html' target="_blank">
-	            <img src="/img/project/1414666434419.png" class="img-rounded" style="width:80%;">
-	        </a>
-	      </div>
-	      <div class="col-xs-9">
-	        <p>领域：跨境电商</p>
-	        <p>介绍：奢侈小商品跨境电商定位于满足青年人追求具有个性和高品味的生活跨境奢侈品电商，产品主要是日常奢侈小商品；通过境外渠道，提供更多年轻人买得起的“便宜”奢侈品；目前网站正在开发中，敬请期待！</p>
-	        <p>所需资源：资金</p>
-	      </div>
-	    </div>
-	    <div class="row pjt-list">
-	      <div class="col-xs-9 col-xs-offset-3">
-	        <h4><a  href='/html/project/content/15ecdec0-fd7e-4afd-9983-a7167363d050.html' target="_blank">社区020</a>
-	            <small>负责人：黄经理</small>
-	        </h4>
-	      </div>
-	      <div class="col-xs-3">
-	        <a  href='/html/project/content/15ecdec0-fd7e-4afd-9983-a7167363d050.html' target="_blank">
-	            <img src="/img/project/default.png" class="img-rounded" style="width:80%;">
-	        </a>
-	      </div>
-	      <div class="col-xs-9">
-	        <p>领域：社区020</p>
-	        <p>介绍：社区020。本人创业理念：有志于为社区居民提供更好的社区管理服务，不断提升和改善社区居民的生活服务及购物体验，通过具有专业水平的互联网技术及团队的不懈努力，打造出一个让居民可依赖物管可依托的第三方社区管理品牌。</p>
-	        <p>所需资源：急需技术合伙人，认同本人创业理念，有志于为社区居民提供更好的社区管理服务，不断提升和改善社区居民的生活服务及购物体验，坚持不懈打造出一个让居民可依赖物管可依托的第三方社区管理品牌。</p>
-	      </div>
-	    </div>
-	    <div class="row pjt-list">
-	      <div class="col-xs-9 col-xs-offset-3">
-	        <h4><a  href='/html/project/content/da962782-b806-4d60-877c-3c2cae878e64.html' target="_blank"></a>
-	            <small>负责人：曹胜标</small>
-	        </h4>
-	      </div>
-	      <div class="col-xs-3">
-	        <a  href='/html/project/content/da962782-b806-4d60-877c-3c2cae878e64.html' target="_blank">
-	            <img src="/img/project/default.png" class="img-rounded" style="width:80%;">
-	        </a>
-	      </div>
-	      <div class="col-xs-9">
-	        <p>领域：教育and机器人</p>
-	        <p>介绍：曾经作为乐高老师的我们，在教学中发现原有的乐高课程经过适当修改后更适合中国的小朋友。历经三年的沉淀，现在终于开始对外提供自有机器人教育服务和教具。现在国内有不少同行开始跟我们合作，愿更多的教育人士一起加入我们，为一个科技创新教育民族品牌而努力。</p>
-	        <p>所需资源：资金和教育资源</p>
-	      </div>
-	    </div>
-    </div>
-    <!--end list-->
-    <!--begin 翻页-->
-    <div style="width:100%;text-align:center;">
-      <div class="pagination pagination-danger">
-
-       <a href="#" class="btn btn-danger previous" id="prePage">
-          <i class="fui-arrow-left"></i>上一页
-        </a>
-       <a href="#" onclick="turnPage('pre')" class="btn btn-danger previous" id="searchPrePage" style="display:none">
-          <i class="fui-arrow-left"></i>上一页
-        </a>
-        <ul>
-          <li><a id="total">共36条</a ><a id="totalPage">共4页</a ><a id="pageIndex">第1页</a ></li>
-        </ul>
-
-        <a href="/html/project/list/1/2.html" class="btn btn-danger next" id="nextPage">下一页
-          <i class="fui-arrow-right"></i>
-        </a>
-        <a href="#" onclick="turnPage('next')" class="btn btn-danger next" id="searchNextPage" style="display:none">下一页
-          <i class="fui-arrow-right"></i>
-        </a>
-
-      </div>
-    </div>
-    <!--begin 翻页-->
-    
-    <div class="well well-lg">
-    <p>在关注创业信息？想找人才，找创业项目，交流创业经验？想获悉更多最新的线下交流活动？聚光塔创业社交应用，帮助创业者克服创业过程中的困难~</p>
-      <div class="row">
-        <div class="col-xs-6">
-          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaAndroidApp()">
-            下载android客户端
-          </a>
-        </div>
-        <div class="col-xs-6">
-          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaIphoneApp()">
-            下载iOS客户端
-          </a>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </header>
 
-    <!-- begin 登录层 -->
-      <!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
-		      </div>
-		      <div class="modal-body">
-		          <form class="form-signin" role="form" action="/user!login.action" method="post">
-			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
-			        <br>
-			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
-			         <br>
-			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-			      </form>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal" onClick="forgetPassword()">忘记密码</button>
-		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-      <!-- end 登录层 -->
-      
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    
-      <footer class="footer">
-	    <div class="container">
-	      <p class="text-muted">广州联维物联网科技有限公司 版权所有 |<a href="/about.html">关于我们</a></p>
-	      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
-	    </div>
-	  </footer>
-	  
-    <script src="/js/jquery-1.10.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://cdn.zenkr.com/bootstrap/3/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="/js/flat-ui.min.js"></script>
-    <script src="/js/application.js"></script>
-    
-    <script src="/js/jquery.cookie.js"></script>
-    <script src="/js/lighttaCommon.js"></script>
-    <script>
-    $(function(){ 
-	    //回车事件
-	    document.onkeydown = function(e){ 
-	        var ev = document.all ? window.event : e;
-	        if(ev.keyCode==13) {
-	        	search();
-	         }
-	    }
-	});
+    <section id="featured">
+    </section>
 
-    //获取数据
-	var pageIndex = 1;//第几页
-	function getData(pageIndex){
-		var keyWord = $("#keyWord").val()
-		var approvalState = "已通过";
-	    $.ajax({
-	        type: "post", 
-	        url: "/project!getProjectsList.action",
-	        data: {pageCount:10,pageIndex:pageIndex,keyWord:keyWord,approvalState:approvalState},
-	        dataType: "json",
-	        success: function(data){
-	       	         var list = data.list;
-	       	         var total = data.total;
-	       	         var totalPage = data.totalPage;
-	       	         pageIndex = data.pageIndex;
-	       	         $("#total").text("共"+total+"条");
-	       	         $("#totalPage").text("共"+totalPage+"页");
-	       	         $("#pageIndex").text("第"+pageIndex+"页");
-	       	         $("#searchPrePage").show();
-	                 $("#searchNextPage").show();
-	                 $("#prePage").hide();
-	                 $("#nextPage").hide();                   
-	       	         if(pageIndex==1){//如果是第一页，则上一页不能点
-	       	        	$("#searchPrePage").hide();
-	       	         }else{
-	       	        	$("#searchPrePage").show();
-	       	         }
-	       	         if(pageIndex==totalPage){//如果是最后，则下一页不能点
-	     	        	$("#searchNextPage").hide();
-	     	         }else{
-	     	        	$("#searchNextPage").show();
-	     	         }
-	          	     $('#list').empty();
-	                 $.each(list,function(idx,item){     
-	                   	   var str =  "<div class='row pjt-list'>"+
-										  "<div class='col-xs-9 col-xs-offset-3'>"+
-											"<h4><a  href='"+item.url+"' target='_blank'>"+item.projectName+"</a>"+
-												"<small>负责人："+item.teamLeader+"</small>"+
-											"</h4>"+
-										  "</div>"+
-										  "<div class='col-xs-3'>"+
-											"<a  href='"+item.url+"' target='_blank'>"+
-												"<img src='"+item.pic+"' class='img-rounded' style='width:80%;'>"+
-											"</a>"+
-										  "</div>"+
-										  "<div class='col-xs-9'>"+
-											"<p>领域："+item.field+"</p>"+
-											"<p>介绍："+item.projectIntroduce+"</p>"+
-											"<p>所需资源："+item.requiredResource+"</p>"+
-										  "</div>"+
-										"</div>";
-	                   	   $("#list").append(str); 
-	                   	})
-	         }
-	    });
-	}
-	//翻页
-	function turnPage(turning){
-		if(turning=="next"){
-			pageIndex = pageIndex + 1;
-			getData(pageIndex);
-		}
-		if(turning=="pre"){
-			pageIndex = pageIndex - 1;
-			getData(pageIndex);
-		}
-		
-	}
-	//搜索
-	function search(){
-		getData(pageIndex);
-	}
-    </script>
+    <section id="description">
+    </section>
+
+    <section class="content project">
+        <div class="container">
+<!--           projects' list -->
+            <div class="row">
+               <div class="col-md-10">
+                   <div class="row">
+                       <div class="col-xs-12"><h4 class="project-title">生态文化农业体系</h4></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xs-4">
+                           <img src="../../../../img/project/1425486416162.png" alt="" class="img-responsive img-rounded">
+                       </div>
+                       <div class="col-xs-8">
+                           <p><span class="project-field">农业</span> | <span class="project-master">丘宗凡</span></p>
+                           <p>打造文化、农业生产相结合的现代化生态农业体系，以生产农产品为主，发展农业文化为辅，集中零散小农经济，为广大小农经济服务创造经济效益</p>
+                           <p class="project-need">所需资源：农业相关技术人才</p>
+                           <a href="../../content/649b840c-e447-4755-9e63-f9c59de9827b.html">了解更多</a>
+                       </div>
+                   </div>
+               </div>
+            </div>
+            <hr>
+            <div class="row">
+               <div class="col-md-10">
+                   <div class="row">
+                       <div class="col-xs-12"><h4 class="project-title">芥纳金融</h4></div>
+                   </div>
+                   <div class="row">
+                       <div class="col-xs-4">
+                           <img src="../../../../img/project/1425486416162.png" alt="" class="img-responsive img-rounded">
+                       </div>
+                       <div class="col-xs-8">
+                           <p><span class="project-field">天使投资 股权众筹</span> | <span class="project-master">张华彬</span></p>
+                           <p>芥纳金融本着服务创业者的宗旨，以股权众筹为切入点，打造“找钱、管钱、挣钱”的创业生态圈，助力小微企业从“输血”到自我“造血”的转变，从而健康成长！</p>
+                           <p class="project-need">所需资源：</p>
+                           <a href="../../content/eef31859-1b5f-4305-bbd6-28a1ed51de0d.html">了解更多</a>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3" style="text-align:center">
+            <p>广州联维物联网科技有限公司 版权所有</p>
+            <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
+
 </html>

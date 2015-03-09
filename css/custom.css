@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', Arial, sans-serif, FontAwesome !important;
+  font-family: 'Open Sans', Arial, sans-serif, "iconfont" !important;
   background-color: #fafafa;
 }
 .media-heading {
@@ -166,6 +166,14 @@ footer {
   color: #fff;
   background-color: #f3a647;
 }
+
+a {
+    color: #e8420d;
+}
+a:hover,
+a:focus {
+    color: #972704;
+}
 /*-------------- append style */
 .btn-transfer {
   background-color: transparent;
@@ -175,4 +183,28 @@ footer {
   margin-top: 50px;
   padding: 50px 0 50px 0;
   color: white;
+}
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.project .desc {
+    border-left: 4px solid rgb(200,200,200);
+}
+
+.project-title:before {
+    content: "\e603    ";
+}
+
+.project-field:before {
+    content: "\e607    "
+}
+
+.project-master:before {
+    content: "\e601    "
+}
+
+.project-need:before {
+    content: "\e607  ";
 }
