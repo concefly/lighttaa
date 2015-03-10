@@ -1,342 +1,323 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Cache-Control" content="no-transform">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="聚光塔LightTa-人才--唐林">
-    <meta name="author" content="聚光塔--LightTa">
-    <link rel="icon" href="/favicon.ico">
 
-    <title>人才-唐林</title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>唐林 | 聚光塔人才库</title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/flat-ui.min.css" rel="stylesheet">
-    <link href="/css/custom.css" rel="stylesheet">
+    <!-- <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap-theme.min.css" rel="stylesheet"> -->
+    <link href="../../../../css/flat-ui.min.css" rel="stylesheet">
+    <link href="../../../../css/custom.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../../../js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../../../js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://apps.bdimg.com/libs/html5shiv/r29/html5.min.js"></script>
-      <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
 
-  <body>
+    <!-- Custom styles for this template -->
+    <!-- <link href="./css/carousel.css" rel="stylesheet"> -->
 
-  <!--begin 一级菜单-->
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-	      <div class="container">
-	        <div class="navbar-header">
-	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	            <span class="sr-only">Toggle navigation</span>
-	          </button>
-	          <a class="navbar-brand" href="/">聚光塔</a>
-	        </div>
-	        <div class="navbar-collapse collapse">
-	          <ul class="nav navbar-nav">
-	            <li><a href="/">首页 </a></li>
-	            <li><a href="/html/project/list/1/1.html">项目</a></li>
-	            <li class="active"><a href="/html/partner/list/1.html">人才</a></li>
-	            <li><a href="/html/outsourcing/list/1.html">业务共享</a></li>
-	            <li class="dropdown">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown">创业学堂 <b class="caret"></b></a>
-	              <ul class="dropdown-menu">
-	                <li><a href="/html/cyxt/cyxt/list/1.html">创业学堂</a></li>
-	                <li><a href="/html/cyxt/xxhd/list/1.html">线下活动</a></li>
-	                <li><a href="/html/cyxt/zxzc/list/1.html">最新政策</a></li>
-	              </ul>
-	            </li>
-	            <li><a href="#" onclick="toMyHome()">我的聚光塔</a></li> 
-	            <li><a href="/about.html" target="_blank">关于我们</a></li>       
-	          </ul>
-	          <ul class="nav navbar-nav navbar-right" id="welcome">
-	            <li><a href="#" onclick="toRegister()">注册</a></li>	              
-	            <li><a href="#" onclick="showLogin()">登录</a></li>
-	          </ul>
-	        </div><!--/.nav-collapse -->
-	      </div>
-	    </div>
-  <!--end 一级菜单-->
+    <!-- ico & fonts-->
+    <link rel="stylesheet" href="../../../../css/alifont.css">
+    <link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext">
 
-  <div class="container">
-    <div style="height:60px;"></div>
+    <!-- home page style -->
+    <link rel="stylesheet" href="./css/custom-home.css">
 
-    <div style="height:10px;"></div>
-      <form class="form-horizontal" role="form" name="commentForm" id="commentForm">
-       <input type="hidden" class="form-control" id="eventId" placeholder="eventId" name="eventId" value="fd56bab6-a36e-43f5-a01a-8a75de38a7e1">
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault"></label>
-          <div class="col-sm-3">
-            <img src="/img/defaultChatHead.png" alt="" class="img-thumbnail">
-          </div>
-          <div class="col-sm-7">
-               <h4 class='media-heading'>唐林</h><br><br>
-               <label class="control-label">华南理工大学</label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault">长驻地</label>
-          <div class="col-sm-10">
-            天河区五山路五山科技广场华南理工大学国家科技园
-          </div>
-        </div>
-        <div style="height:30px;"></div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault">工作经历</label>
-          <div class="col-sm-10">
-            经营淘宝店一间
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault">从事领域</label>
-          <div class="col-sm-10">
-            服装
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault">专业</label>
-          <div class="col-sm-10">
-            
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault">个人技能</label>
-          <div class="col-sm-10">
-            细心，口才好
-          </div>
-        </div>      
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault">兴趣爱好</label>
-          <div class="col-sm-10">
-             做饭
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault">所在公司现状</label>
-          <div class="col-sm-10">
-             正常营业
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault">希望工作内容</label>
-          <div class="col-sm-10">
-             
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault">工资期望</label>
-          <div class="col-sm-10">
-             
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault">期权期望</label>
-          <div class="col-sm-10">
-             
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label" for="formGroupInputDefault"></label>
-          <div class="col-sm-10">
-             <button type="button" class="btn btn-danger" onclick="makeFriend()">加为好友</button>
-          </div>
-        </div>
-        <div class="col-xs-12" style="border-top:1px solid #e8410d;"></div>
-        <div style="height:20px;"></div>
-        <div class="form-group">
-          <label class="col-xs-2" for="formGroupInputDefault">
-            <img src="/img/defaultChatHead.png" alt="" class="img-rounded" style="width:100%">
-          </label>
-          <div class="col-xs-10">
-            <textarea class="form-control" rows="3" placeholder="有何感想？" id="content" name="content"></textarea><br>
-            <button type="button" class="btn btn-block btn-danger" onclick="publishComment()">评论</button>
-          </div>
-        </div>
-      </form>
-      <div style="height:30px;"></div>
-      <!--begin 评论-->
-      <div id="comment">	      
-      </div>
-      <!--end 评论-->
-    <div style="height:10px;"></div>
-    <div style="width:100%;text-align:center;">
-      <div class="pagination pagination-danger">
-       <button type="button" class="btn btn-block btn-danger" onClick="turnPage('next')">加载更多评论</button>
-      </div>
-    </div>
-	
-	<div class="well">
-    <p>在关注创业信息？想找人才，找创业项目，交流创业经验？想获悉更多最新的线下交流活动？聚光塔创业社交应用，帮助创业者克服创业过程中的困难~</p>
-      <div class="row">
-        <div class="col-xs-6">
-          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaAndroidApp()">
-            下载android客户端
-          </a>
-        </div>
-        <div class="col-xs-6">
-          <a href="#" class="btn btn-large btn-block btn-danger" onClick="toDownLodaIphoneApp()">
-            下载iOS客户端
-          </a>
-        </div>
-      </div>
-    </div>
-	
-	<div class="well">
-      <div class="row">
-        <div class="co-xs-2">分享到：</div>
-        <div class="co-xs-8">
-          <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
-          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-        </div>
-      </div>
-    </div>
-	
-  </div>
- 
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted">广州联维物联网科技有限公司 版权所有</p>
-      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
-    </div>
-  </footer>
-  
-      <!-- begin 登录层 -->
-      <!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		        <h4 class="modal-title" id="myModalLabel">Welcome !</h4>
-		      </div>
-		      <div class="modal-body">
-		          <form class="form-signin" role="form" action="/user!login.action" method="post">
-			        <input name="email" type="text" class="form-control" placeholder="请输入邮箱地址" required autofocus>
-			        <br>
-			        <input name="pwd" type="password" class="form-control" placeholder="请输入密码" required>
-			         <br>
-			        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-			      </form>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">忘记密码</button>
-		        <button type="button" class="btn btn-primary" onClick="register()">注册</button>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-      <!-- end 登录层 -->
-      <footer class="footer">
-	    <div class="container">
-	      <p class="text-muted">广州联维物联网科技有限公司 版权所有 |<a href="/about.html">关于我们</a></p>
-	      <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
-	    </div>
-	  </footer>	  
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/js/jquery-1.10.1.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <!-- extra js -->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://cdn.zenkr.com/bootstrap/3/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="/js/flat-ui.min.js"></script>
-    <script src="/js/application.js"></script>
-    
-    <script src="/js/jquery.cookie.js"></script>
-    <script src="/js/lighttaCommon.js"></script>
-    
+    <script src="../../../../js/jquery.cookie.js"></script>
+    <script src="../../../../js/lighttaCommon.js"></script>
+    <script src="../../../../js/bootstrap-function.js"></script>
+
+    <!-- flexslider -->
+    <link rel="stylesheet" href="../../../../css/flexslider.css">
+    <script src="../../../../js/jquery.flexslider-min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">LightTA</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../../../../html/project/list/1/1.html">项目</a>
+                        </li>
+                        <li><a href="../../../../html/partner/list/1.html">人才</a>
+                        </li>
+                        <li><a href="../../../../html/outsourcing/list/1.html">业务共享</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="../../../../html/cyxt/cyxt/list/1.html" class="dropdown-toggle" disabled>创业学堂 <span class="iconfont icon-xiala"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../../../html/cyxt/xxhd/list/1.html">线下活动</a>
+                                </li>
+                                <li><a href="../../../../html/cyxt/zxzc/list/1.html">最新政策</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="./about.html">关于</a>
+                        </li>
+                        <form class="navbar-form navbar-left" action="/user!login.action" method="post">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="登录邮箱" style="width:150px">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="pwd" class="form-control" placeholder="密码" style="width:150px">
+                            </div>
+                            <button type="submit" class="btn btn-transfer">登录</button>
+                        </form>
+                        <li>
+                            <button type="button" class="btn btn-info navbar-btn" style="border: 1px solid;">体验一下</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <!--           img title master schedule -->
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1">
+                    <img src="../../../../img/project/1425486416162.png" alt="AAA" class="img-responsive img-rounded">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="partner-title">唐林</h4>
+                    <p class="partner-location">华南理工大学</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-8">
+                    <table class="partner-page">
+                        <tr>
+                            <td>常住地</td>
+                            <td>
+                                <p>天河区五山路五山科技广场华南理工大学国家科技园</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>工作经历</td>
+                            <td>
+                                <p>经营淘宝店一间</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>从事领域</td>
+                            <td>
+                                <p>行业：互联网金融 股权众筹 天使投资 芥纳金融是一个为创业者和投资人提供投融资和社交的平台，现诚寻Android和IOS技术牛人加盟创业团队，联系QQ：58-48-41-001</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>专业</td>
+                            <td>
+                                <p>行业：互联网金融 股权众筹 天使投资 芥纳金融是一个为创业者和投资人提供投融资和社交的平台，现诚寻Android和IOS技术牛人加盟创业团队，联系QQ：58-48-41-001</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>个人技能</td>
+                            <td>
+                                <p>行业：互联网金融 股权众筹 天使投资 芥纳金融是一个为创业者和投资人提供投融资和社交的平台，现诚寻Android和IOS技术牛人加盟创业团队，联系QQ：58-48-41-001</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>兴趣爱好</td>
+                            <td>
+                                <p>行业：互联网金融 股权众筹 天使投资 芥纳金融是一个为创业者和投资人提供投融资和社交的平台，现诚寻Android和IOS技术牛人加盟创业团队，联系QQ：58-48-41-001</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>所在公司现状</td>
+                            <td>
+                                <p>行业：互联网金融 股权众筹 天使投资 芥纳金融是一个为创业者和投资人提供投融资和社交的平台，现诚寻Android和IOS技术牛人加盟创业团队，联系QQ：58-48-41-001</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>希望工作内容</td>
+                            <td>
+                                <p>行业：互联网金融 股权众筹 天使投资 芥纳金融是一个为创业者和投资人提供投融资和社交的平台，现诚寻Android和IOS技术牛人加盟创业团队，联系QQ：58-48-41-001</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>工资期望</td>
+                            <td>
+                                <p>行业：互联网金融 股权众筹 天使投资 芥纳金融是一个为创业者和投资人提供投融资和社交的平台，现诚寻Android和IOS技术牛人加盟创业团队，联系QQ：58-48-41-001</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>期权期望</td>
+                            <td>
+                                <p>行业：互联网金融 股权众筹 天使投资 芥纳金融是一个为创业者和投资人提供投融资和社交的平台，现诚寻Android和IOS技术牛人加盟创业团队，联系QQ：58-48-41-001</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--                评论栏 -->
+                <aside class="col-md-4">
+                    <section class="partner-comment">
+                        <div class="partner-comment-header">
+                            &#xe60c 2条评论
+                        </div>
+                        <article class="partner-comment-row">
+                            <div class="partner-comment-row-user">
+                                Me
+                            </div>
+                            <div class="partner-comment-row-content">
+                                <form action="">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <textarea name="content" id="content" cols="30" rows="3" class="form-control" placeholder="你的评论"></textarea>
+                                        </div>
+                                        <button class="btn btn-info btn-xs pull-right">发表</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </article>
+                        <article class="partner-comment-row">
+                            <div class="partner-comment-row-user">
+                                User
+                            </div>
+                            <div class="partner-comment-row-content">
+                                Content
+                            </div>
+                        </article>
+                        <article class="partner-comment-row">
+                            <div class="partner-comment-row-user">
+                                User
+                            </div>
+                            <div class="partner-comment-row-content">
+                                Content
+                            </div>
+                        </article>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3" style="text-align:center">
+                    <p>广州联维物联网科技有限公司 版权所有</p>
+                    <p>Copyright &copy; 2013-2015 Linevi. All Right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script type="text/javascript">
-	$(document).ready(function(){
-	  //加载评论
-	  getComment(1);
-	});
-	
-	//加载评论
-	var pageIndex = 1;//第几页
-	function getComment(pageIndex){	
-	    $.ajax({
-	        type: "post", 
-	        url: "/comment!getComment.action?eventId=fd56bab6-a36e-43f5-a01a-8a75de38a7e1&pageIndex="+pageIndex,
-	        data: {pageCount:10,pageIndex:pageIndex},
-	        dataType: "json",
-	        success: function(data){
-	       	         var list = data.list;
-	       	         var total = data.total;
-	       	         var totalPage = data.totalPage;
-	       	         pageIndex = data.pageIndex;
-	       	         $("#total").text("共"+total+"条");
-	       	         $("#totalPage").text("共"+totalPage+"页");
-	       	         $("#pageIndex").text("第"+pageIndex+"页");
-	       	         if(pageIndex==1){//如果是第一页，则上一页不能点
-	       	        	$("#previousPage").addClass("disabled"); 
-	
-	       	         }else{
-	       	        	 $("#previousPage").removeClass("disabled"); 
-	       	         }
-	       	         if(pageIndex==totalPage){//如果是最后，则下一页不能点
-	     	        	$("#nextPage").addClass("disabled"); 
-	     	        	$("#nextPage").removeAttr("onclick");
-	     	         }else{
-	     	        	$("#nextPage").removeClass("disabled"); 
-	     	         }
-	          	     //$('#commentList').empty();
-	                 $.each(list,function(idx,item){                       	   
-	                   	   var trHTML = "<div class='media'>"+
-											"<a class='media-left' href='#'>"+
-											  "<img src='"+item.chatHead+"' style='max-width:80px;max-height:80px;'>"+
-											"</a>"+
-											"<div class='media-body'>"+
-											  "<h4 class='media-heading'>"+item.userName+" <small>"+item.commentTime+"</small></h4>"+
-											     item.content
-											"</div>"+
-										"</div>";
-	                       $("#comment").append(trHTML);//在table最后面添加一行
-	                   	})
-	         }
-	    });
-	}
-	
-	//翻页
-	function turnPage(turning){
-		if(turning=="next"){
-			pageIndex = pageIndex + 1;
-			getComment(pageIndex);
-		}
-		if(turning=="pre"){
-			pageIndex = pageIndex - 1;
-			getComment(pageIndex);
-		}
-		
-	}
-	
-	//加为好友
-	function makeFriend(){
-	   $.ajax({
-	        type: "GET", 
-	        url: "/message!toMakeFriend.action",
-	        data: {receiverId:"8413c599520045e99be902663ac44bd9"},
-	        dataType: "json",
-	        cache:false,
-	        success: function(data){
-	            if(data.status=="success"){
-	            	alert("请求成功，请耐心等待对方答复！");
-	            }
-	            if(data.status=="failed"){
-	            	alert(data.info);
-	            }
-	            if(data.status=="noLogin"){
-		            alert(data.info);
-		            window.open("/login.html");
-	            }
-	         }
-	    });
-	}
+        $(document).ready(function () {
+            getComment(1);
+        });
+
+        //加载评论
+        var pageIndex = 1; //第几页
+        function getComment(pageIndex) {
+            $.ajax({
+                type: "post",
+                url: "/comment!getComment.action?eventId=eef31859-1b5f-4305-bbd6-28a1ed51de0d&pageIndex=" + pageIndex,
+                data: {
+                    pageCount: 10,
+                    pageIndex: pageIndex
+                },
+                dataType: "json",
+                success: function (data) {
+                    var list = data.list;
+                    var total = data.total;
+                    var totalPage = data.totalPage;
+                    pageIndex = data.pageIndex;
+                    $("#total").text("共" + total + "条");
+                    $("#totalPage").text("共" + totalPage + "页");
+                    $("#pageIndex").text("第" + pageIndex + "页");
+                    if (pageIndex == 1) { //如果是第一页，则上一页不能点
+                        $("#previousPage").addClass("disabled");
+
+                    } else {
+                        $("#previousPage").removeClass("disabled");
+                    }
+                    if (pageIndex == totalPage) { //如果是最后，则下一页不能点
+                        $("#nextPage").addClass("disabled");
+                        $("#nextPage").removeAttr("onclick");
+                    } else {
+                        $("#nextPage").removeClass("disabled");
+                    }
+                    //$('#commentList').empty();
+                    $.each(list, function (idx, item) {
+                        var trHTML = "<div class='media'>" +
+                            "<a class='media-left' href='#'>" +
+                            "<img src='" + item.chatHead + "' style='max-width:80px;max-height:80px;'>" +
+                            "</a>" +
+                            "<div class='media-body'>" +
+                            "<h4 class='media-heading'>" + item.userName + " <small>" + item.commentTime + "</small></h4>" +
+                            item.content + "</div>" +
+                            "</div>";
+                        $("#comment").append(trHTML); //在table最后面添加一行
+                    })
+                }
+            });
+        }
+
+        //翻页
+        function turnPage(turning) {
+            if (turning == "next") {
+                pageIndex = pageIndex + 1;
+                getComment(pageIndex);
+            }
+            if (turning == "pre") {
+                pageIndex = pageIndex - 1;
+                getComment(pageIndex);
+            }
+
+        }
     </script>
-  </body>
+    <script>
+        window._bd_share_config = {
+            "common": {
+                "bdSnsKey": {},
+                "bdText": "",
+                "bdMini": "1",
+                "bdMiniList": ["weixin", "tsina"],
+                "bdPic": "",
+                "bdStyle": "0",
+                "bdSize": "16"
+            },
+            "slide": {
+                "type": "slide",
+                "bdImg": "0",
+                "bdPos": "right",
+                "bdTop": "132.5"
+            }
+        };
+        with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+    </script>
+</body>
+
 </html>

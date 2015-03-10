@@ -321,7 +321,7 @@ table[class~=project-page] tr td:nth-child(2) p {
 }
 
 .project-comment {
-    margin: 20px 0 20px 40px;
+    margin: 20px 0 20px 0;
 }
 
 .project-comment-header {
@@ -331,7 +331,7 @@ table[class~=project-page] tr td:nth-child(2) p {
 }
 
 .project-comment-row {
-    margin: 0.8em 0 0.8em 0;
+    margin: 0.8em 0 0.8em 1em;
 }
 
 .project-comment-row .project-comment-row-user,
@@ -341,5 +341,65 @@ table[class~=project-page] tr td:nth-child(2) p {
 }
 
 .project-comment-row .project-comment-row-user {
+    width: 5em;
+}
+
+.partner-title a {
+    color: #106394;
+}
+
+.partner-title a:hover,
+.partner-title a:focus {
+    color: #053e60;
+    text-decoration: underline;
+}
+
+.partner-location:before {
+    content: "地址:    ";
+}
+
+table[class~=partner-page] {
+    vertical-align: middle;
+}
+
+table[class~=partner-page] tr td {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+table[class~=partner-page] tr td:first-of-type {
+    width: 15%;
+    text-align: center;
+    color: #e8420d;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+table[class~=partner-page] tr td:nth-child(2) p {
+    border-left: 2px solid #f39375;
+    padding-left: 1em;
+}
+
+.partner-comment {
+    margin: 20px 0 20px 0;
+}
+
+.partner-comment-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #09a355;
+    font-weight: 700;
+}
+
+.partner-comment-row {
+    margin: 0.8em 0 0.8em 1em;
+}
+
+.partner-comment-row .partner-comment-row-user,
+.partner-comment-row-content {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.partner-comment-row .partner-comment-row-user {
     width: 5em;
 }
